@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <!--gverdis logo-->
+    <title>About Us</title>
+  </head>
+  <style>
+    body {
+      background-image: url("aboutUs.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: darken;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      background-color: rgb(15, 15, 14);
+      padding: 0px;
+      margin: 0px;
+      overflow: hidden;
+    }
+    .navbar a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+      text-align: center;
+    }
+
+    .navbar a:hover {
+      background-color: rgb(35, 35, 35);
+    }
+    .navbar li {
+      float: left;
+    }
+    .logo {
+      position: absolute;
+      left: 1270px;
+      margin-top: 5px;
+      height: 50px;
+    }
+
+    #Text {
+      margin-left: 540px;
+      color: aliceblue;
+      margin-top: 50px;
+    }
+
+    .border {
+      border-color: blueviolet;
+      border-style: dashed;
+      border-radius: 30px;
+      padding: 30px;
+    }
+
+    #about {
+      color: aliceblue;
+      margin-top: 150px;
+      width: 400px;
+      margin-left: 450px;
+    }
+
+    .audio {
+      margin-left: 100px;
+      margin-top: 10px;
+      height: 35px;
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <h2>
+        <ul>
+          <li><a href="index.AnimeWebSite.html" target="_self">Home</a></li>
+          <li>
+            <a href="index.AnimeWebHistory.html" target="_self">History</a>
+          </li>
+          <li><a href="index.AnimeWebGanres.html" target="_self">Genres</a></li>
+          <li><a href="index.AnimeWebManga.html" target="_self">Manga</a></li>
+          <li><a href="index.AnimeWebGames.html" target="_self">Games</a></li>
+          <li>
+            <a href="index.AnimeWebAboutUs.html" target="_self">About Us</a>
+          </li>
+          <img class="logo" src="logo.png" alt="logo" />
+          <div class="audio-player">
+            <audio class="audio" controls autoplay loop>
+              <source src="LthemeA.mp3" type="audio/mp3" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </ul>
+      </h2>
+    </nav>
+
+    <h1 id="Text">About This WebSite</h1>
+
+    <h3 class="border" id="about">
+      This website is designed to increase your awareness and interest in anime.
+      I sincerely hope that the information presented on this site was useful
+      and interesting for you. Thank you for your attention!
+    </h3>
+  </body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <title>Romance</title>
+    <style>
+      .body {
+        background-color: rgb(152, 19, 157);
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        background-color: rgb(15, 15, 14);
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+        overflow: hidden;
+      }
+      .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(35, 35, 35);
+      }
+      .navbar li {
+        float: left;
+      }
+      .logo {
+        position: absolute;
+        left: 1270px;
+        margin-top: 8px;
+        height: 50px;
+      }
+
+      .ListYourName {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .YourNameImg {
+        margin-top: 50px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutYourName {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -430px;
+      }
+
+      .listHoriAndMiyamura {
+        color: rgb(231, 229, 229);
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .HoriAndMiyamuraImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutHoriAndMiyamura {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -455px;
+      }
+
+      .listFruitsBasket {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .FruitsBasketImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutFruitsBasket {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -350px;
+      }
+
+      .listYourLie {
+        margin-top: 200px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .YourLieImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutYourLie {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -420px;
+      }
+
+      .listHowl {
+        margin-top: 150px;
+        margin-left: 55px;
+        color: rgb(231, 229, 229);
+      }
+
+      .HowlImg {
+        margin-top: 45px;
+        width: 300px;
+        float: left; /* Float the image to the left */
+        margin-left: 30px;
+      }
+
+      #aboutHowl {
+        width: 600px;
+        margin-left: 430px;
+        margin-top: 90px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listLoveIswar {
+        margin-top: 150px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .LoveIswarImg {
+        margin-top: 45px;
+        width: 320px;
+        margin-left: 30px;
+      }
+
+      #aboutLoveIswar {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -485px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listMyDressUpDarling {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .MyDressUpDarlingImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutMyDressUpDarling {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -455px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listDarlinginthefranxx {
+        color: rgb(231, 229, 229);
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .DarlinginthefranxxImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutDarlinginthefranxx {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listmaidSama {
+        margin-top: 300px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .maidSamaImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutmaidSama {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        color: rgb(231, 229, 229);
+      }
+      .listkomicantcommunicate {
+        margin-top: 100px;
+        margin-left: 60px;
+        color: rgb(231, 229, 229);
+      }
+
+      .komicantcommunicateImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      .aboutkomicantcommunicate {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -440px;
+        color: rgb(231, 229, 229);
+      }
+      .audio {
+        margin-left: 100px;
+        margin-top: 10px;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <nav class="navbar">
+      <h2>
+        <ul>
+          <li><a href="index.AnimeWebSite.html">Home</a></li>
+          <li><a href="index.AnimeWebHistory.html">History</a></li>
+          <li><a href="index.AnimeWebGanres.html" target="_self">Genres</a></li>
+          <li><a href="index.AnimeWebManga.html">Manga</a></li>
+          <li><a href="index.AnimeWebGames.html">Games</a></li>
+          <li>
+            <a href="index.AnimeWebAboutUs.html" target="_self">About Us</a>
+          </li>
+          <img class="logo" src="logo.png" alt="logo" />
+          <div class="audio-player">
+            <audio class="audio" controls autoplay loop>
+              <source src="Theme of Ms. Okudera.mp3" type="audio/mp3" />
+              <source src="Theme of Ms. Okudera.wav" type="audio/wav" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </ul>
+      </h2>
+    </nav>
+
+    <ol>
+      <h3>
+        <li class="ListYourName">Your Name</li>
+        <img class="YourNameImg" src="yourName.jpg" alt="Your name" />
+      </h3>
+      <h3 id="aboutYourName">
+        "Your Name," also known as "Kimi no Na wa," is a Japanese animated film
+        directed by Makoto Shinkai, released in 2016. It is a romantic
+        fantasy-drama that follows the lives of two teenagers, Mitsuha Miyamizu
+        and Taki Tachibana, who mysteriously begin to swap bodies. Mitsuha
+        resides in a rural town, while Taki lives in Tokyo. The two initially
+        struggle to adapt to each other's lives but eventually develop a unique
+        form of communication. As they navigate their extraordinary connection,
+        a cosmic event unfolds, linking their destinies in unexpected and
+        emotionally charged ways. The film beautifully explores themes of time,
+        fate, and the profound impact people can have on each other's lives.
+        "Your Name" is celebrated for its stunning animation, evocative
+        soundtrack, and the heartfelt narrative that transcends the typical
+        bounds of romance. It became a massive success both in Japan and
+        internationally, earning acclaim for its emotional resonance and visual
+        artistry. "Your Name" is a captivating tale that captures the essence of
+        fleeting connections and the universal longing for connection and
+        understanding.
+      </h3>
+
+      <h3><li class="listHoriAndMiyamura">Hori san & Miyamura Kun</li></h3>
+      <img
+        class="HoriAndMiyamuraImg"
+        src="Hori_san_to_Miyamura_kun_Shin_gakki_S-495825208-large.jpg"
+        alt="HoriAndMiyamura"
+      />
+      <h3 id="aboutHoriAndMiyamura">
+        "Hori-san & Miyamura-kun," also known as "Horimiya," is a heartwarming
+        Japanese romantic comedy manga series written and illustrated by HERO.
+        The story revolves around two high school students, Kyouko Hori and
+        Izumi Miyamura, who initially appear to be ordinary and unassuming but
+        lead surprisingly complex lives outside of school. Kyouko Hori is a
+        popular and outgoing girl known for her social grace, while Izumi
+        Miyamura is a seemingly introverted and gloomy classmate. However, their
+        paths intersect when Miyamura's hidden persona as a pierced and tattooed
+        individual is accidentally revealed when he helps Hori with a favor
+        outside of school. This unexpected revelation forms the basis of a
+        unique bond between them. As their friendship deepens, Hori and Miyamura
+        discover and embrace each other's true selves, transcending societal
+        expectations and stereotypes. The series navigates themes of
+        self-discovery, acceptance, and the transformative power of genuine
+        connections. It delves into the complexities of relationships, exploring
+        both the challenges and joys that come with understanding and
+        appreciating someone for who they truly are. "Hori-san & Miyamura-kun"
+        is celebrated for its relatable characters, humor, and the sincerity
+        with which it portrays the intricacies of teenage relationships.
+      </h3>
+
+      <h3><li class="listFruitsBasket">Fruits Basket</li></h3>
+      <img
+        class="FruitsBasketImg"
+        src="Fruits_Basket_2019_Poster_3.webp"
+        alt="FruitsBasket"
+      />
+      <h3 id="aboutFruitsBasket">
+        "Fruits Basket" revolves around Tohru Honda, an orphaned high school
+        girl who, after encountering the Sohma family's secret, becomes entwined
+        with their lives. The Sohmas are cursed, each turning into an animal
+        from the Chinese zodiac when hugged by the opposite gender. As Tohru
+        befriends these unique individuals, the series delves into their
+        emotional struggles, family dynamics, and the transformative power of
+        genuine connections. Combining elements of romance, comedy, and drama,
+        "Fruits Basket" is celebrated for its heartwarming exploration of
+        healing, acceptance, and the profound impact of unconditional love.
+      </h3>
+      <h3>
+        <li class="listYourLie">Your lie in April</li>
+      </h3>
+      <img
+        class="YourLieImg"
+        src="yourlieinApril.jpg"
+        alt="your lie in April img"
+      />
+      <h3 id="aboutYourLie">
+        "Your Lie in April," known as "Shigatsu wa Kimi no Uso" in Japanese, is
+        a poignant anime series that explores the themes of love, loss, and the
+        transformative power of music. The story follows Kōsei Arima, a piano
+        prodigy who loses his ability to hear the sound of the piano after a
+        traumatic event. His monotonous life takes a turn when he meets the
+        free-spirited violinist Kaori Miyazono. As Kaori helps Kōsei rediscover
+        his love for music, a tender romance blossoms between them. The series
+        beautifully weaves classical music into its narrative, using it as a
+        metaphor for life's highs and lows. However, beneath the surface, both
+        characters harbor personal struggles and secrets that add depth to the
+        emotional journey. "Your Lie in April" is celebrated for its emotionally
+        charged storytelling, breathtaking animation, and a compelling
+        exploration of the characters' inner worlds. It skillfully combines
+        elements of romance and drama, leaving a lasting impact on viewers with
+        its poignant narrative and themes of resilience, friendship, and the
+        pursuit of one's passion.
+      </h3>
+
+      <h3><li class="listHowl">Hawl's Moving castle</li></h3>
+      <img class="HowlImg" src="howl.png" alt="Hawl's Moving castle" />
+      <h3 id="aboutHowl">
+        "Howl's Moving Castle" is a captivating Japanese animated fantasy film
+        directed by Hayao Miyazaki and produced by Studio Ghibli. Released in
+        2004, the film is based on the novel of the same name by Diana Wynne
+        Jones. It tells the enchanting story of Sophie, a young woman
+        transformed into an elderly version of herself by a curse, and her
+        journey alongside the mysterious and flamboyant wizard Howl. The titular
+        moving castle is a magical, mechanical structure that serves as the home
+        and refuge for Howl and his eclectic companions. As Sophie becomes
+        entangled in Howl's world, the narrative unfolds into a rich tapestry of
+        magic, love, and self-discovery. The film is celebrated for its
+        breathtaking animation, imaginative world-building, and Miyazaki's
+        signature storytelling. "Howl's Moving Castle" explores themes of
+        identity, the consequences of war, and the transformative power of love.
+        It enchants audiences with its whimsical charm while delivering a
+        powerful message about the resilience of the human spirit. Overall,
+        "Howl's Moving Castle" is a visually stunning and emotionally resonant
+        masterpiece that has earned acclaim both in Japan and internationally,
+        contributing to Studio Ghibli's legacy of creating timeless animated
+        classics.
+      </h3>
+      <h3><li class="listLoveIswar">Kaguya-sama: Love is War</li></h3>
+      <img
+        class="LoveIswarImg"
+        src="Kaguya-sama_Love_is_War_art.jpg"
+        alt="LoveIswar"
+      />
+      <h3 id="aboutLoveIswar">
+        "Kaguya-sama: Love is War" is a Japanese romantic comedy anime and manga
+        series created by Aka Akasaka. The story centers around the two highly
+        intelligent and prideful student council members of Shuchiin Academy,
+        Miyuki Shirogane and Kaguya Shinomiya. Both characters harbor romantic
+        feelings for each other, but their intense pride prevents them from
+        confessing their emotions. The series revolves around the comedic and
+        strategic battles between Miyuki and Kaguya as they attempt to make the
+        other confess their feelings first. The narrative cleverly plays with
+        various romantic and comedic tropes, incorporating elements of
+        psychological warfare as the characters engage in elaborate schemes to
+        outwit each other. Throughout the series, Kaguya and Miyuki are joined
+        by other eccentric characters, including Chika Fujiwara, the cheerful
+        student council secretary, and Yu Ishigami, a reticent yet insightful
+        member. "Kaguya-sama: Love is War" explores themes of love, friendship,
+        and the complexity of romantic relationships, all while providing humor
+        through its witty dialogue and clever visual gags. The series has gained
+        widespread popularity for its unique premise, well-developed characters,
+        and its ability to balance comedic moments with genuine emotional depth.
+        It offers a fresh and entertaining take on the romantic comedy genre,
+        making it a standout work in the world of anime and manga.
+      </h3>
+
+      <h3><li class="listMyDressUpDarling">My Dress-Up Darling</li></h3>
+      <img
+        class="MyDressUpDarlingImg"
+        src="Darling.jpg"
+        alt="MyDressUpDarling"
+      />
+      <h3 id="aboutMyDressUpDarling">
+        "My Dress-Up Darling," also known as "Sono Bisque Doll wa Koi wo Suru,"
+        is a Japanese manga series written and illustrated by Shinichi Fukuda.
+        The story centers around the unlikely friendship and budding romance
+        between two high school students with contrasting interests. The
+        protagonist, Wakana Gojou, is an introverted and skilled cosplayer who
+        keeps his hobby a secret due to societal expectations. One day, he
+        encounters Marin Kitagawa, a cheerful and outgoing girl with a passion
+        for making doll clothes. Despite their differences, Marin discovers
+        Wakana's talent for cosplay, and the two decide to collaborate on
+        creating costumes for Wakana's cosplaying endeavors. "My Dress-Up
+        Darling" explores themes of self-discovery, acceptance, and the
+        transformative power of shared hobbies and friendships. The series
+        combines elements of romance, comedy, and slice-of-life storytelling as
+        Wakana and Marin navigate the challenges of high school life while
+        pursuing their individual passions. The manga has gained popularity for
+        its endearing characters, wholesome moments, and the unique exploration
+        of the cosplay and doll-making subcultures. It offers a heartwarming and
+        entertaining narrative that resonates with readers who appreciate
+        stories about personal growth and the bonds formed through shared
+        interests.
+      </h3>
+      <h3><li class="listDarlinginthefranxx">Darling In the Franxx</li></h3>
+      <img
+        class="DarlinginthefranxxImg"
+        src="darling in the farnxx.jpg"
+        alt="Darlinginthefranxx"
+      />
+      <h3 id="aboutDarlinginthefranxx">
+        "Darling in the Franxx" is a Japanese anime series set in a dystopian
+        future where young pilots, partnered as male-female pairs, control mechs
+        called Franxx to defend humanity from mysterious creatures. The story
+        follows Hiro and Zero Two, a pair with a unique connection, as they
+        navigate complex relationships, existential questions, and the
+        challenges of piloting Franxx in the face of impending threats. The
+        series explores themes of identity, love, and the consequences of a
+        controlled society.
+      </h3>
+
+      <h3><li class="listmaidSama">Maid Sama!</li></h3>
+      <img class="maidSamaImg" src="maidSama.jpg" alt="MardockScramble" />
+      <h3 id="aboutmaidSama">
+        "Maid Sama!" ("Kaichou wa Maid-sama!") is a Japanese romantic comedy
+        anime and manga series created by Hiro Fujiwara. The story is set in the
+        fictional Seika High School, which was formerly an all-boys school but
+        has recently become co-educational. Misaki Ayuzawa, the strong-willed
+        and determined student council president, is determined to reform the
+        school's reputation. Misaki, however, harbors a secret—she works
+        part-time at a maid cafe to support her family. The plot unfolds when
+        Usui Takumi, a popular and aloof student, discovers Misaki's secret.
+        Despite initial conflicts, a romantic tension develops between Misaki
+        and Usui. "Maid Sama!" combines elements of romance, comedy, and
+        slice-of-life as it explores the dynamics of Misaki's dual life, her
+        relationship with Usui, and the humorous situations that arise within
+        the school setting. The series is known for its endearing characters,
+        comedic moments, and the evolving romance between its protagonists. It
+        has gained popularity for its lighthearted yet engaging storytelling.
+      </h3>
+
+      <h3><li class="listkomicantcommunicate">komi can't communicate</li></h3>
+      <img
+        class="komicantcommunicateImg"
+        src="komisan.jpg"
+        alt="komicantcommunicate"
+      />
+      <h3 class="aboutkomicantcommunicate">
+        "Komi Can't Communicate," known as "Komi-san wa, Komyushou desu" in
+        Japanese, is a popular manga series written and illustrated by Tomohito
+        Oda. The story revolves around Shoko Komi, a high school student who is
+        admired by her peers for her beauty and grace. However, Komi struggles
+        with extreme social anxiety, making it challenging for her to
+        communicate effectively with others. The central plot unfolds when
+        Hitohito Tadano, an average and empathetic classmate, discovers Komi's
+        communication difficulties. Tadano, wanting to help Komi overcome her
+        social challenges, becomes her first friend and helps her navigate the
+        complexities of high school life. The series combines elements of
+        comedy, romance, and slice-of-life as it explores Komi's journey to
+        overcome her social anxiety and build connections with her classmates.
+        Each chapter introduces new characters, each with their own quirks and
+        personalities, adding to the humor and charm of the narrative. "Komi
+        Can't Communicate" has gained widespread acclaim for its relatable
+        themes, endearing characters, and its humorous yet heartfelt portrayal
+        of social interactions. It resonates with readers for its positive
+        messages about friendship, understanding, and the importance of reaching
+        out to others.
+      </h3>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <title>Time Travel</title>
+    <style>
+      .body {
+        background-color: rgb(0, 114, 140);
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        background-color: rgb(15, 15, 14);
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+        overflow: hidden;
+      }
+      .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(35, 35, 35);
+      }
+      .navbar li {
+        float: left;
+      }
+      .logo {
+        position: absolute;
+        left: 1270px;
+        margin-top: 8px;
+        height: 50px;
+      }
+
+      .ListDeathNote {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .deathNoteImg {
+        margin-top: 50px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutDeathNote {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -400px;
+      }
+
+      .listMonster {
+        color: rgb(231, 229, 229);
+        margin-top: 200px;
+        margin-left: 50px;
+      }
+
+      .MonsterImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutMonster {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+      }
+
+      .listBungouStrayDogs {
+        margin-top: 200px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .BungouStrayDogsImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutBungouStrayDogs {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+      }
+
+      .listTheMillionaireDetectiveBalanceUnlimited {
+        margin-top: 250px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .TheMillionaireDetectiveBalanceUnlimitedImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutTheMillionaireDetectiveBalanceUnlimited {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -400px;
+      }
+
+      .listParanoiaAgent {
+        margin-top: 200px;
+        margin-left: 55px;
+        color: rgb(231, 229, 229);
+      }
+
+      .ParanoiaAgentImg {
+        margin-top: 45px;
+        width: 300px;
+        float: left; /* Float the image to the left */
+        margin-left: 30px;
+      }
+
+      #aboutParanoiaAgent {
+        width: 600px;
+        margin-left: 430px;
+        margin-top: 150px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listGhostintheShell {
+        margin-top: 150px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .GhostintheShellImg {
+        margin-top: 45px;
+        width: 320px;
+        margin-left: 30px;
+      }
+
+      #aboutGhostintheShell {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listPsychoPass {
+        margin-top: 200px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .PsychoPassImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutPsychoPass {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listTerrorInresonanse {
+        color: rgb(231, 229, 229);
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .TerrorInresonanseImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutTerrorInresonanse {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listDetectiveConan {
+        margin-top: 200px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .DetectiveConanImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutDetectiveConan {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listMoriartyThePatriot {
+        margin-top: 200px;
+        margin-left: 60px;
+        color: rgb(231, 229, 229);
+      }
+
+      .MoriartyThePatriotImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutMoriartyThePatriot {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -415px;
+        margin-bottom: 200px;
+        color: rgb(231, 229, 229);
+      }
+
+      .audio {
+        margin-left: 100px;
+        margin-top: 10px;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <nav class="navbar">
+      <h2>
+        <ul>
+          <li><a href="index.AnimeWebSite.html">Home</a></li>
+          <li><a href="index.AnimeWebHistory.html">History</a></li>
+          <li><a href="index.AnimeWebGanres.html" target="_self">Genres</a></li>
+          <li><a href="index.AnimeWebManga.html">Manga</a></li>
+          <li><a href="index.AnimeWebGames.html">Games</a></li>
+          <li>
+            <a href="index.AnimeWebAboutUs.html" target="_self">About Us</a>
+          </li>
+          <img class="logo" src="logo.png" alt="logo" />
+          <div class="audio-player">
+            <audio class="audio" controls autoplay loop>
+              <source
+                src="Tokyo Revengers Main Theme  EPIC COVER (Tokyo Revengers OST).mp3"
+                type="audio/mp3"
+                src="Tokyo Revengers Main Theme  EPIC COVER (Tokyo Revengers OST).wav"
+                type="audio/wav"
+              />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </ul>
+      </h2>
+    </nav>
+
+    <ol>
+      <h3>
+        <li class="ListDeathNote">Tokyo Revengers</li>
+        <img
+          class="deathNoteImg"
+          src="Tokyo_Revengers_Anime_Key_Visual_2.1.webp"
+          alt="deathNote"
+        />
+      </h3>
+      <h3 id="aboutDeathNote">
+        "Tokyo Revengers" is a Japanese manga and anime series that blends
+        elements of crime, drama, and time travel. The story follows Takemichi
+        Hanagaki, a directionless adult who discovers that his former girlfriend
+        and her brother have been murdered by a Tokyo gang called the Tokyo
+        Manji Gang. Through a mysterious time-traveling ability, Takemichi finds
+        himself back in his teenage years, determined to alter the future and
+        prevent the tragedies from occurring. The series combines gang
+        conflicts, intricate character relationships, and a mix of present and
+        past timelines, offering a compelling narrative of redemption,
+        friendship, and the consequences of one's actions.
+      </h3>
+
+      <h3><li class="listMonster">The Girl Who Leapt Through Time</li></h3>
+      <img
+        class="MonsterImg"
+        src="The_Girl_Who_Leapt_Through_Time_poster.jpg"
+        alt="monster"
+      />
+      <h3 id="aboutMonster">
+        "The Girl Who Leapt Through Time" ("Toki wo Kakeru Shoujo") is a
+        Japanese animated film directed by Mamoru Hosoda. The story revolves
+        around Makoto Konno, a high school student who discovers she has the
+        ability to leap through time. The film explores how Makoto uses this
+        newfound power, initially for personal convenience but later realizing
+        the impact on her life and the lives of those around her. Key aspects of
+        the story include Makoto's attempts to correct minor mistakes and
+        improve her circumstances, but as she delves deeper into the
+        consequences of her actions, she begins to understand the weight of
+        manipulating time. The narrative also involves friendship, romance, and
+        the inevitability of life's challenges. "The Girl Who Leapt Through
+        Time" is celebrated for its heartfelt storytelling, charming characters,
+        and its exploration of the consequences of time travel. The film has
+        received critical acclaim for its emotional depth and remains a beloved
+        work in the realm of anime films.
+      </h3>
+
+      <h3><li class="listBungouStrayDogs">Noein: To Your Other Self</li></h3>
+      <img class="BungouStrayDogsImg" src="noein.jpg" alt="BungouStrayDogs" />
+      <h3 id="aboutBungouStrayDogs">
+        "Noein: To Your Other Self" is a Japanese anime series that blends
+        science fiction, alternate dimensions, and time travel. The story
+        revolves around a group of friends who become involved in a conflict
+        between two parallel dimensions: La'cryma and Shangri-La. La'cryma is a
+        futuristic world facing destruction, and Shangri-La is our contemporary
+        world. The central plot involves Haruka Kaminogi, a girl with mysterious
+        powers, who becomes the target of both dimensions. A group of enigmatic
+        individuals, including the dragon-like entity Noein, seeks Haruka for
+        reasons that transcend time and space. As the series unfolds, it
+        explores complex themes, such as the nature of reality, the impact of
+        choices, and the interconnectedness of individuals across different
+        timelines. "Noein" is known for its visually distinctive animation
+        style, its thought-provoking narrative, and the exploration of quantum
+        physics concepts. The series offers a unique and engaging experience for
+        viewers interested in intricate sci-fi plots and multidimensional
+        storytelling.
+      </h3>
+
+      <h3>
+        <li class="listTheMillionaireDetectiveBalanceUnlimited">Orange</li>
+      </h3>
+      <img
+        class="TheMillionaireDetectiveBalanceUnlimitedImg"
+        src="orange.jpg"
+        alt="Tokyo Revengers"
+      />
+      <h3 id="aboutTheMillionaireDetectiveBalanceUnlimited">
+        "Orange" is a Japanese anime and manga series that combines elements of
+        romance, drama, and science fiction. The story follows Naho Takamiya, a
+        high school student who receives letters from her future self. These
+        letters provide guidance on how to navigate events and make decisions to
+        prevent the regrettable death of Kakeru Naruse, a new transfer student.
+        The narrative explores themes of friendship, love, and the impact of
+        small actions on the course of one's life. As Naho and her friends
+        follow the instructions in the letters, they grapple with the challenges
+        of altering the future and creating a better outcome for Kakeru.
+        "Orange" is praised for its emotional depth, character development, and
+        the exploration of the complexities of relationships. The series
+        combines a touching coming-of-age story with the speculative element of
+        receiving messages from the future.
+      </h3>
+
+      <h3><li class="listParanoiaAgent">Puella Magi Madoka Magica</li></h3>
+      <img class="ParanoiaAgentImg" src="puella.jpg" alt="Paranoia Agent" />
+      <h3 id="aboutParanoiaAgent">
+        "Puella Magi Madoka Magica" is a Japanese anime series that subverts the
+        magical girl genre, taking a darker and more complex approach. The story
+        follows Madoka Kaname, a middle school student who is offered the
+        opportunity to become a magical girl by the mysterious Kyubey. However,
+        as Madoka and her friends delve into the responsibilities and
+        consequences of being magical girls, they discover the harsh realities
+        and sacrifices involved. The series explores themes of despair,
+        sacrifice, and the consequences of one's choices. It features intense
+        battles against mysterious creatures known as witches and delves into
+        the emotional struggles of the characters as they face increasingly
+        challenging situations. "Puella Magi Madoka Magica" is renowned for its
+        psychological depth, intricate storytelling, and unexpected twists. It
+        has garnered critical acclaim for its deconstruction of the magical girl
+        genre and its ability to blend dark themes with visually striking
+        animation.
+      </h3>
+      <h3><li class="listGhostintheShell">Higurashi When They Cry</li></h3>
+      <img class="GhostintheShellImg" src="cry.jpg" alt="GhostintheShell" />
+      <h3 id="aboutGhostintheShell">
+        "Higurashi When They Cry" ("Higurashi no Naku Koro ni") is a Japanese
+        anime and visual novel series known for its psychological horror and
+        mystery elements. The story unfolds in the rural village of Hinamizawa,
+        where a series of violent and mysterious events occur every year during
+        the Watanagashi Festival. The narrative is presented in multiple arcs,
+        each exploring different perspectives and timelines. The characters,
+        including a group of friends, experience time loops and alternate
+        realities, leading to a complex mystery involving supernatural elements,
+        curses, and the darker aspects of human nature. The series combines
+        suspenseful storytelling with moments of intense violence, creating a
+        chilling atmosphere. "Higurashi When They Cry" is celebrated for its
+        atmospheric tension, psychological horror, and its ability to play with
+        the expectations of the audience.
+      </h3>
+
+      <h3>
+        <li class="listPsychoPass">Re:Zero - Starting Life in Another World</li>
+      </h3>
+      <img class="PsychoPassImg" src="reZero.jpg" alt="HxH" />
+      <h3 id="aboutPsychoPass">
+        "Re:Zero - Starting Life in Another World" is a Japanese light novel
+        series that has been adapted into an anime. The story follows Subaru
+        Natsuki, a young man who is transported to a fantasy world. Subaru
+        discovers that he has the ability to return from death to a certain
+        point in time whenever he dies. With this power, he embarks on a journey
+        to save his friends and unravel the mysteries of the world. The
+        narrative explores themes of life, death, and the consequences of one's
+        actions. Subaru faces numerous challenges and makes difficult choices,
+        and each death brings a new perspective on the story. The series
+        incorporates fantasy elements, complex characters, and a unique take on
+        the isekai (alternate world) genre. "Re:Zero" has gained popularity for
+        its intricate plot, emotional depth, and the protagonist's struggle with
+        the psychological toll of death and resurrection. The series has
+        captivated audiences with its blend of fantasy, drama, and suspenseful
+        storytelling.
+      </h3>
+      <h3><li class="listTerrorInresonanse">Erased</li></h3>
+      <img class="TerrorInresonanseImg" src="erased.jpg" alt="Mob Psycho 100" />
+      <h3 id="aboutTerrorInresonanse">
+        "Erased" ("Boku Dake ga Inai Machi") is a Japanese anime series adapted
+        from the manga of the same name. The story follows Satoru Fujinuma, a
+        struggling manga artist with a peculiar ability called "Revival." This
+        power allows him to go back in time a few minutes before a
+        life-threatening incident occurs, giving him the chance to prevent it.
+        However, when Satoru's mother is murdered, he experiences a Revival that
+        sends him back to his childhood in 1988. He realizes that the key to
+        solving his mother's murder is connected to a series of abductions and
+        killings of his classmates that occurred when he was a child. Determined
+        to change the past and prevent the tragedies, Satoru embarks on a
+        suspenseful journey filled with mystery, emotional moments, and
+        unexpected twists. "Erased" is praised for its intricate plot,
+        well-paced storytelling, and its exploration of themes like regret,
+        redemption, and the impact of small actions on the course of one's life.
+        The series has captivated audiences with its suspenseful narrative and
+        compelling characters.
+      </h3>
+
+      <h3><li class="listDetectiveConan">Steins Gate</li></h3>
+      <img class="DetectiveConanImg" src="steinsgate.jpg" alt="Jujutsukaisen" />
+      <h3 id="aboutDetectiveConan">
+        "Steins;Gate" is a Japanese visual novel, anime, and manga series known
+        for its intricate plot and exploration of time travel. The story
+        revolves around Rintarou Okabe, a self-proclaimed mad scientist, and his
+        friends as they accidentally discover a way to send messages to the
+        past, altering the present and creating unforeseen consequences. The
+        narrative delves into the consequences of time manipulation, exploring
+        themes of cause and effect, and the butterfly effect. As Okabe and his
+        friends investigate the mysteries surrounding their discovery, they
+        become entangled in a web of conspiracies and must confront the moral
+        and existential implications of their actions. "Steins;Gate" is praised
+        for its character development, emotional impact, and clever handling of
+        time travel concepts. The series blends elements of science fiction,
+        thriller, and drama, offering a unique and engaging experience for
+        viewers interested in complex narratives and thought-provoking themes.
+      </h3>
+
+      <h3>
+        <li class="listMoriartyThePatriot">Tatami Galaxy</li>
+      </h3>
+      <img
+        class="MoriartyThePatriotImg"
+        src="Tatami_Galaxy_cover.png"
+        alt="moritarythepatriotic"
+      />
+      <h3 id="aboutMoriartyThePatriot">
+        "Tatami Galaxy" ("Yojouhan Shinwa Taikei") is a Japanese anime series
+        that blends elements of psychological drama, romance, and satire. The
+        story follows an unnamed protagonist, often referred to as Watashi (I),
+        as he navigates college life. The unique narrative structure involves
+        Watashi reliving his college years in different parallel universes, each
+        influenced by different choices and perspectives. The series explores
+        themes of identity, regret, and the consequences of decisions. Watashi
+        joins different clubs, meets various characters, and experiences a
+        variety of scenarios, all while searching for the elusive "rose-colored
+        campus life." The narrative is presented in a non-linear fashion,
+        providing viewers with a distinctive and thought-provoking storytelling
+        experience. "Tatami Galaxy" is praised for its clever writing, artistic
+        style, and exploration of existential themes. It offers a complex and
+        engaging narrative that encourages viewers to reflect on the choices
+        they make in life and the impact those choices can have on their
+        personal development.
+      </h3>
+    </ol>
+  </body>
+</html>

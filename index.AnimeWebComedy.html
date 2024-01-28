@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <title>Comedy</title>
+    <style>
+      .body {
+        background-color: rgb(168, 159, 56);
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        background-color: rgb(15, 15, 14);
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+        overflow: hidden;
+      }
+      .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(35, 35, 35);
+      }
+      .navbar li {
+        float: left;
+      }
+      .logo {
+        position: absolute;
+        left: 1270px;
+        margin-top: 8px;
+        height: 50px;
+      }
+
+      .ListRurouniKenshin {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .RurouniKenshinImg {
+        margin-top: 50px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutRurouniKenshin {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -430px;
+      }
+
+      .listVinlandSaga {
+        color: rgb(231, 229, 229);
+        margin-top: 300px;
+        margin-left: 50px;
+      }
+
+      .VinlandSagaImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutVinlandSaga {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -420px;
+      }
+
+      .listGolden {
+        margin-top: 300px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .GoldenImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutGolden {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -330px;
+      }
+
+      .listkaguya {
+        margin-top: 200px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .kaguyaImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      .aboutkaguya {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -420px;
+      }
+
+      .listdrifters {
+        margin-top: 150px;
+        margin-left: 55px;
+        color: rgb(231, 229, 229);
+      }
+
+      .driftersImg {
+        margin-top: 45px;
+        width: 300px;
+        float: left; /* Float the image to the left */
+        margin-left: 30px;
+      }
+
+      #aboutdrifters {
+        width: 600px;
+        margin-left: 430px;
+        margin-top: 90px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listFireflies {
+        margin-top: 200px;
+        margin-left: 60px;
+        color: rgb(231, 229, 229);
+      }
+
+      .FirefliesImg {
+        margin-top: 45px;
+        width: 320px;
+        margin-left: 30px;
+      }
+
+      #aboutFireflies {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -430px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listyuri {
+        margin-top: 300px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .yuriImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutyuri {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -350px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listace {
+        color: rgb(231, 229, 229);
+        margin-top: 300px;
+        margin-left: 50px;
+      }
+
+      .aceImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutace {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -340px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listping {
+        margin-top: 150px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .pingImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutping {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        color: rgb(231, 229, 229);
+      }
+      .listmushi {
+        margin-top: 250px;
+        margin-left: 60px;
+        color: rgb(231, 229, 229);
+      }
+
+      .mushiImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      .aboutmushi {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -300px;
+        margin-bottom: 100px;
+        color: rgb(231, 229, 229);
+      }
+
+      .audio {
+        margin-left: 100px;
+        margin-top: 10px;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <nav class="navbar">
+      <h2>
+        <ul>
+          <li><a href="index.AnimeWebSite.html">Home</a></li>
+          <li><a href="index.AnimeWebHistory.html">History</a></li>
+          <li><a href="index.AnimeWebGanres.html" target="_self">Genres</a></li>
+          <li><a href="index.AnimeWebManga.html">Manga</a></li>
+          <li><a href="index.AnimeWebGames.html">Games</a></li>
+          <li>
+            <a href="index.AnimeWebAboutUs.html" target="_self">About Us</a>
+          </li>
+          <img class="logo" src="logo.png" alt="logo" />
+          <div class="audio-player">
+            <audio class="audio" controls autoplay loop>
+              <source
+                src="SPY x FAMILY Main Theme  EPIC VERSION.mp3"
+                type="audio/mp3"
+                src="SPY x FAMILY Main Theme  EPIC VERSION.wav"
+                type="audio/wav"
+              />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </ul>
+      </h2>
+    </nav>
+
+    <ol>
+      <h3>
+        <li class="ListRurouniKenshin">Toradora</li>
+        <img
+          class="RurouniKenshinImg"
+          src="toradora.jpg"
+          alt="RurouniKenshin"
+        />
+      </h3>
+      <h3 id="aboutRurouniKenshin">
+        "Toradora!" is a Japanese anime and light novel series that centers
+        around the unlikely partnership between Ryuuji Takasu, a high school
+        student with a scary appearance, and Taiga Aisaka, a small but fierce
+        girl. Despite their contrasting personalities, they decide to help each
+        other pursue their respective crushes. As they work together, their
+        relationship evolves, and they discover the complexities of love,
+        friendship, and self-discovery during their high school years.
+        "Toradora!" is known for its heartfelt moments, humor, and exploration
+        of teenage emotions in the realm of romance and friendship.
+      </h3>
+
+      <h3>
+        <li class="listVinlandSaga">Daily Lives of High School Boys</li>
+      </h3>
+      <img
+        class="VinlandSagaImg"
+        src="dailylivesofhighschoolboys.jpg"
+        alt="VinlandSaga"
+      />
+      <h3 id="aboutVinlandSaga">
+        "Daily Lives of High School Boys" ("Danshi Koukousei no Nichijou") is a
+        Japanese manga and anime series that provides a comedic and exaggerated
+        portrayal of the daily lives and antics of three high school
+        boys—Tadakuni, Hidenori Tabata, and Yoshitake Tanaka. The series
+        humorously explores their interactions with each other, their
+        classmates, and the absurd situations they find themselves in, all
+        within the backdrop of typical high school life. "Daily Lives of High
+        School Boys" is known for its witty humor, observational comedy, and
+        satirical take on various aspects of adolescence, making it a
+        lighthearted and entertaining slice-of-life series.
+      </h3>
+
+      <h3><li class="listGolden">No Game No Life</li></h3>
+      <img class="GoldenImg" src="nogame.jpg" alt="golden" />
+      <h3 id="aboutGolden">
+        "No Game No Life" is a Japanese anime and light novel series that
+        follows the siblings Sora and Shiro, who together form the gaming duo
+        known as "Blank." Transported to a fantasy world governed by games, they
+        aim to conquer the world by defeating its inhabitants in various
+        challenges and outsmarting political intrigues. The series is
+        characterized by its strategic and intellectual approach to gaming,
+        vibrant visuals, and the siblings' quest for dominance in a world where
+        everything is determined by games.
+      </h3>
+      <h3>
+        <li class="listFireflies">Aho Girl</li>
+      </h3>
+      <img
+        class="FirefliesImg"
+        src="AhoGirl.jpg"
+        alt="Grave_of_the_Fireflies_poster"
+      />
+      <h3 id="aboutFireflies">
+        "Aho Girl" is a Japanese anime and manga series that revolves around the
+        comedic misadventures of Yoshiko Hanabatake, an eccentric and
+        academically challenged high school girl often referred to as an "idiot"
+        or "aho" in Japanese. Despite her lack of common sense, Yoshiko's
+        cheerful and carefree personality affects those around her, particularly
+        her serious and studious neighbor, Akuru Akutsu. The series humorously
+        depicts their interactions and the chaotic situations that arise due to
+        Yoshiko's antics, creating a light-hearted and entertaining comedy
+        series.
+      </h3>
+
+      <h3><li class="listyuri">Miss Kobayashi's Dragon Maid</li></h3>
+      <img class="yuriImg" src="misskobayashisdragonmaid.jpg" alt="Kingdom" />
+      <h3 id="aboutyuri">
+        "Miss Kobayashi's Dragon Maid" is a Japanese anime and manga series that
+        follows Kobayashi, an office worker, who encounters Tohru, a dragon who
+        transforms into a human maid. Tohru becomes Kobayashi's live-in maid,
+        and the series explores their daily life together along with other
+        dragon characters. Filled with humor, fantasy, and themes of friendship,
+        the series showcases the unconventional relationships between dragons
+        and humans in a comedic and heartwarming manner.
+      </h3>
+      <h3><li class="listace">Hinamatsuri</li></h3>
+      <img class="aceImg" src="hinamatsuri.jpg" alt="JokerGame" />
+      <h3 id="aboutace">
+        "Hinamatsuri" is a Japanese anime and manga series that blends elements
+        of comedy, science fiction, and slice-of-life. The story revolves around
+        Nitta, a yakuza member whose life takes an unexpected turn when a
+        mysterious girl with psychic abilities named Hina appears in his
+        apartment. Hina claims to be an esper sent to observe humanity, and her
+        presence leads to comedic and heartwarming situations. As Hina and other
+        characters with supernatural abilities become part of Nitta's life,
+        "Hinamatsuri" explores themes of friendship, family, and the absurdities
+        of everyday life. The series is known for its humor, unexpected
+        character dynamics, and moments of genuine emotion.
+      </h3>
+
+      <h3><li class="listping">Grand Blue</li></h3>
+      <img
+        class="pingImg"
+        src="Grand_Blue_TV_Series-444180804-large.jpg"
+        alt="rose_of_versailles_cover_art_01"
+      />
+      <h3 id="aboutping">
+        "Grand Blue" is a Japanese manga and anime series that follows the
+        misadventures of Iori Kitahara as he enters college and joins the diving
+        club. Expecting a normal college experience, Iori finds himself
+        entangled in a hilarious world of heavy drinking, partying, and comedic
+        situations with his eccentric clubmates. The series is known for its
+        adult humor, absurd antics, and the peculiar but endearing friendships
+        formed within the diving club. "Grand Blue" offers a comedic take on
+        college life and the unexpected paths that friendships can take in a
+        seaside setting.
+      </h3>
+      <h3><li class="listmushi">Spy X Family</li></h3>
+      <img class="mushiImg" src="spyxFamily.jpg" alt="mushi" />
+      <h3 class="aboutmushi">
+        "Spy x Family" is a Japanese manga series that blends elements of
+        action, comedy, and drama. The story revolves around Twilight, a highly
+        skilled spy, who is given a mission to infiltrate an elite school. To
+        accomplish this, he needs to create a family, leading him to marry an
+        esper named Yor Forger. Unbeknownst to them, their adopted daughter,
+        Anya, possesses telepathic abilities. The series explores the challenges
+        of maintaining a fake family while juggling espionage missions and
+        dealing with the complexities of their relationships. "Spy x Family" is
+        celebrated for its engaging plot, unique characters, and the blend of
+        spy thriller elements with heartwarming family dynamics.
+      </h3>
+
+      <h3><li class="listdrifters">Gekkan Shoujo Nozaki-kun</li></h3>
+      <img class="driftersImg" src="monthlygirls.jpe" alt="drifters" />
+      <h3 id="aboutdrifters">
+        "Gekkan Shoujo Nozaki-kun" (Monthly Girls' Nozaki-kun) is a Japanese
+        anime and manga series that combines romance and comedy. The story
+        follows Chiyo Sakura, a high school girl who confesses her feelings to
+        her crush, Umetarou Nozaki, a talented manga artist. However, due to a
+        misunderstanding, Chiyo becomes one of Nozaki's assistants in creating
+        his popular shoujo manga. The series humorously explores the dynamics
+        between Chiyo and Nozaki, as well as the quirky group of individuals
+        involved in manga creation. Each character represents a different manga
+        archetype, leading to humorous situations as Chiyo tries to navigate her
+        feelings for Nozaki amidst the chaotic world of manga production.
+        "Gekkan Shoujo Nozaki-kun" is known for its clever satire of shoujo
+        manga tropes, witty humor, and endearing characters. It offers a
+        lighthearted and entertaining take on the manga creation process while
+        delivering laughs and heartwarming moments.
+      </h3>
+
+      <h3><li class="listkaguya">Gintama</li></h3>
+      <img class="kaguyaImg" src="gintama.jpg" alt="Kaguya" />
+      <h3 class="aboutkaguya">
+        "Gintama" is a Japanese anime and manga series known for its unique
+        blend of samurai action, comedy, and parodies. Set in an
+        alternate-history Edo period invaded by aliens, the story follows
+        Gintoki Sakata, a lazy yet skilled swordsman, and his oddball friends.
+        They take on odd jobs, engage in epic battles, and navigate a world
+        filled with humor, pop culture references, and heartwarming moments.
+        "Gintama" is acclaimed for its versatility, breaking the fourth wall,
+        and its ability to seamlessly shift between humor and serious
+        storytelling, making it a beloved and iconic series.
+      </h3>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <title>Mystery</title>
+    <style>
+      .body {
+        background-color: rgb(20, 0, 119);
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        background-color: rgb(15, 15, 14);
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+        overflow: hidden;
+      }
+      .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(35, 35, 35);
+      }
+      .navbar li {
+        float: left;
+      }
+      .logo {
+        position: absolute;
+        left: 1270px;
+        margin-top: 8px;
+        height: 50px;
+      }
+
+      .ListDeathNote {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .deathNoteImg {
+        margin-top: 50px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutDeathNote {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -450px;
+      }
+
+      .listMonster {
+        color: rgb(231, 229, 229);
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .MonsterImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutMonster {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -420px;
+      }
+
+      .listBungouStrayDogs {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .BungouStrayDogsImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutBungouStrayDogs {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+      }
+
+      .listTheMillionaireDetectiveBalanceUnlimited {
+        margin-top: 150px;
+        margin-left: 60px;
+        color: rgb(231, 229, 229);
+      }
+
+      .TheMillionaireDetectiveBalanceUnlimitedImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutTheMillionaireDetectiveBalanceUnlimited {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -400px;
+      }
+
+      .listParanoiaAgent {
+        margin-top: 200px;
+        margin-left: 55px;
+        color: rgb(231, 229, 229);
+      }
+
+      .ParanoiaAgentImg {
+        margin-top: 45px;
+        width: 300px;
+        float: left; /* Float the image to the left */
+        margin-left: 30px;
+      }
+
+      #aboutParanoiaAgent {
+        width: 600px;
+        margin-left: 430px;
+        margin-top: 80px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listGhostintheShell {
+        margin-top: 150px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .GhostintheShellImg {
+        margin-top: 45px;
+        width: 320px;
+        margin-left: 30px;
+      }
+
+      #aboutGhostintheShell {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -440px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listPsychoPass {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .PsychoPassImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutPsychoPass {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -470px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listTerrorInresonanse {
+        color: rgb(231, 229, 229);
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .TerrorInresonanseImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutTerrorInresonanse {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -440px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listDetectiveConan {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .DetectiveConanImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutDetectiveConan {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -450px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listMoriartyThePatriot {
+        margin-top: 100px;
+        margin-left: 60px;
+        color: rgb(231, 229, 229);
+      }
+
+      .MoriartyThePatriotImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutMoriartyThePatriot {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        margin-bottom: 50px;
+        color: rgb(231, 229, 229);
+      }
+      .audio {
+        margin-left: 100px;
+        margin-top: 10px;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <nav class="navbar">
+      <h2>
+        <ul>
+          <li><a href="index.AnimeWebSite.html">Home</a></li>
+          <li><a href="index.AnimeWebHistory.html">History</a></li>
+          <li><a href="index.AnimeWebGanres.html" target="_self">Genres</a></li>
+          <li><a href="index.AnimeWebManga.html">Manga</a></li>
+          <li><a href="index.AnimeWebGames.html">Games</a></li>
+          <li>
+            <a href="index.AnimeWebAboutUs.html" target="_self">About Us</a>
+          </li>
+          <img class="logo" src="logo.png" alt="logo" />
+          <div class="audio-player">
+            <audio class="audio" controls autoplay loop>
+              <source
+                src="Naoki Urasawa's Monster Opening  Remastered in 1080p.mp3"
+                type="audio/mp3"
+                src="Naoki Urasawa's Monster Opening  Remastered in 1080p.wav"
+                type="audio/wav"
+              />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </ul>
+      </h2>
+    </nav>
+
+    <ol>
+      <h3>
+        <li class="ListDeathNote">Death Note</li>
+        <img class="deathNoteImg" src="deathNote.jpg" alt="deathNote" />
+      </h3>
+      <h3 id="aboutDeathNote">
+        "Death Note" is a Japanese manga and anime series written by Tsugumi
+        Ohba and illustrated by Takeshi Obata. The story revolves around Light
+        Yagami, a highly intelligent high school student who discovers a
+        mysterious notebook called the Death Note. The Death Note has the power
+        to kill anyone whose name is written in it, as long as the writer has
+        the person's face in their mind. Motivated by a desire to eliminate
+        criminals and create a utopia free of wrongdoing, Light begins using the
+        Death Note to carry out vigilante justice. However, his actions attract
+        the attention of law enforcement and the enigmatic detective known only
+        as "L." This sets off a high-stakes cat-and-mouse game between Light and
+        L, as they engage in a battle of wits to outsmart each other. The series
+        explores complex moral and ethical questions as Light grapples with the
+        consequences of playing god and the impact of his actions on society.
+        Themes of power, justice, and the fine line between good and evil are
+        central to the narrative. "Death Note" is celebrated for its
+        psychological depth, suspenseful plot twists, and the intellectual duel
+        between its two brilliant protagonists, making it a standout work in the
+        psychological thriller genre.
+      </h3>
+
+      <h3><li class="listMonster">Monster</li></h3>
+      <img class="MonsterImg" src="Monster.jpg" alt="monster" />
+      <h3 id="aboutMonster">
+        "Monster" is a psychological thriller anime based on the manga by Naoki
+        Urasawa. The story follows Dr. Kenzo Tenma, a highly skilled and
+        compassionate neurosurgeon in Germany. When faced with a moral dilemma,
+        Tenma chooses to save the life of a young boy named Johan Liebert
+        instead of the mayor, a decision that alters the course of his life. As
+        Tenma rises through the medical ranks, a series of mysterious and
+        gruesome murders unfold, and he discovers that Johan, the boy he saved,
+        is connected to these heinous crimes. Realizing the consequences of his
+        choice, Tenma sets out on a quest to stop Johan and unravel the dark
+        conspiracy surrounding the boy's past. "Monster" explores themes of
+        morality, guilt, and the consequences of choices. It delves into the
+        psychological depths of its characters, particularly the enigmatic
+        Johan, as Tenma tries to understand the nature of evil and redemption.
+        The series is celebrated for its intricate plot, complex characters, and
+        thought-provoking narrative, creating a suspenseful and intellectually
+        engaging experience for viewers.
+      </h3>
+
+      <h3><li class="listBungouStrayDogs">Steins Gate</li></h3>
+      <img
+        class="BungouStrayDogsImg"
+        src="steinsgate.jpg"
+        alt="BungouStrayDogs"
+      />
+      <h3 id="aboutBungouStrayDogs">
+        "Steins;Gate" is a Japanese visual novel, anime, and manga series that
+        combines elements of science fiction, thriller, and drama. The story
+        follows Rintarou Okabe, a self-proclaimed mad scientist, and his friends
+        as they accidentally discover a way to send messages to the past,
+        altering the present and creating unforeseen consequences. The narrative
+        explores themes of time travel, cause and effect, and the butterfly
+        effect. As Okabe and his friends delve deeper into the mysteries of time
+        manipulation, they find themselves entangled in a web of conspiracies
+        and must confront the moral and existential implications of their
+        actions. "Steins;Gate" is celebrated for its intricate plot,
+        well-developed characters, and the emotional impact of its storytelling.
+        The series has gained widespread acclaim for its unique take on time
+        travel and its ability to blend thrilling suspense with moments of
+        genuine emotion.
+      </h3>
+
+      <h3>
+        <li class="listTheMillionaireDetectiveBalanceUnlimited">Erased</li>
+      </h3>
+      <img
+        class="TheMillionaireDetectiveBalanceUnlimitedImg"
+        src="erased.jpg"
+        alt="Tokyo Revengers"
+      />
+      <h3 id="aboutTheMillionaireDetectiveBalanceUnlimited">
+        "Erased" ("Boku Dake ga Inai Machi") is a Japanese anime series adapted
+        from the manga of the same name. The story follows Satoru Fujinuma, a
+        struggling manga artist with a peculiar ability called "Revival." This
+        power allows him to go back in time a few minutes before a
+        life-threatening incident occurs, giving him the chance to prevent it.
+        However, when Satoru's mother is murdered, he experiences a Revival that
+        sends him back to his childhood in 1988. He realizes that the key to
+        solving his mother's murder is connected to a series of abductions and
+        killings of his classmates that occurred when he was a child. Determined
+        to change the past and prevent the tragedies, Satoru embarks on a
+        suspenseful journey filled with mystery, emotional moments, and
+        unexpected twists. "Erased" is praised for its intricate plot,
+        well-paced storytelling, and its exploration of themes like regret,
+        redemption, and the impact of small actions on the course of one's life.
+        The series has captivated audiences with its suspenseful narrative and
+        compelling characters.
+      </h3>
+
+      <h3><li class="listParanoiaAgent">Paranoia Agent</li></h3>
+      <img
+        class="ParanoiaAgentImg"
+        src="paranoia agent.png"
+        alt="Paranoia Agent"
+      />
+      <h3 id="aboutParanoiaAgent">
+        "Paranoia Agent," a Japanese anime series directed by Satoshi Kon, is a
+        psychological thriller that delves into the collective psyche of
+        society. The narrative begins with the sudden emergence of a mysterious
+        assailant known as Shonen Bat (Lil' Slugger), who attacks people with a
+        golden baseball bat. As the story unfolds, it becomes apparent that
+        Shonen Bat's existence is more complex than a mere criminal, leading to
+        a series of interconnected and surreal events. The anime explores themes
+        of societal pressure, media influence, and the blurred line between
+        reality and fantasy. It intertwines the lives of various characters,
+        including detectives investigating the case, victims, and witnesses,
+        creating a multi-layered narrative that challenges the viewer's
+        perceptions. "Paranoia Agent" weaves a captivating and thought-provoking
+        tale that questions the nature of reality, the impact of mass hysteria,
+        and the psychological toll of modern urban life. Through its unique
+        storytelling and Satoshi Kon's signature visual style, the series offers
+        a profound and unsettling exploration of the human psyche, making it a
+        standout work in the psychological thriller genre.
+      </h3>
+      <h3><li class="listGhostintheShell">Ghostin The Shell</li></h3>
+      <img
+        class="GhostintheShellImg"
+        src="Ghost In The Shell.png"
+        alt="GhostintheShell"
+      />
+      <h3 id="aboutGhostintheShell">
+        "Ghost in the Shell" is a Japanese cyberpunk manga series written and
+        illustrated by Masamune Shirow, and it has been adapted into various
+        anime films and series. The story is set in a futuristic world where
+        humans can augment their bodies with cybernetic enhancements, and
+        artificial intelligence has reached a level where it challenges the
+        definition of consciousness. The narrative centers around Major Motoko
+        Kusanagi, a cyborg policewoman, and her team in Section 9, an elite
+        anti-cyberterrorism unit. They investigate complex cases involving
+        cybercrime, hacking, and the blurred boundaries between humanity and
+        artificial intelligence. One overarching theme is the exploration of
+        what it means to be human in a society where the line between man and
+        machine is increasingly indistinct. "Ghost in the Shell" raises
+        philosophical questions about the nature of identity, consciousness, and
+        the ethical implications of advanced technology. It combines action,
+        intrigue, and philosophical depth, making it a seminal work in the
+        cyberpunk genre. The series has significantly influenced discussions
+        about the intersection of technology and humanity in both science
+        fiction and real-world debates.
+      </h3>
+
+      <h3><li class="listPsychoPass">Psycho-Pass</li></h3>
+      <img class="PsychoPassImg" src="psychopass.png" alt="HxH" />
+      <h3 id="aboutPsychoPass">
+        "Psycho-Pass" is a Japanese anime series set in a dystopian future where
+        society is governed by the Sibyl System, an advanced artificial
+        intelligence that assesses individuals' mental states to maintain social
+        order. The story follows Akane Tsunemori, a new recruit in the Public
+        Safety Bureau, as she and her colleagues, known as Enforcers,
+        investigate and apprehend potential criminals identified by their
+        Psycho-Pass, a numerical representation of mental health. As the
+        narrative unfolds, the series explores themes of free will, justice, and
+        the consequences of relying on technology to maintain societal harmony.
+        The Enforcers, often individuals with high crime coefficients, are
+        utilized to apprehend those deemed threats to society, blurring the
+        lines between law enforcement and those they pursue. "Psycho-Pass" is
+        known for its psychological depth, intense action, and dystopian
+        world-building. It challenges viewers to contemplate the ethical
+        implications of a society where one's mental state determines their fate
+        and raises questions about the balance between security and individual
+        freedom. The series offers a gripping exploration of the human psyche in
+        a futuristic setting, making it a compelling entry in the cyberpunk and
+        psychological thriller genres.
+      </h3>
+      <h3><li class="listTerrorInresonanse">Terror In Resonanse</li></h3>
+      <img
+        class="TerrorInresonanseImg"
+        src="Terror in resonanse.jpg"
+        alt="Mob Psycho 100"
+      />
+      <h3 id="aboutTerrorInresonanse">
+        "Terror in Resonance" is a Japanese anime series directed by Shinichirō
+        Watanabe and written by Yoko Kanno. The narrative unfolds in
+        contemporary Tokyo, where two mysterious teenagers, Nine and Twelve,
+        launch a series of terrorist attacks that puzzle the authorities and
+        capture the attention of the public. The duo leaves behind cryptic clues
+        and challenges for the police to solve. As the story progresses, it is
+        revealed that Nine and Twelve are former subjects of a secret experiment
+        conducted by a government institution. Driven by their desire to expose
+        the truth and confront their troubled past, the two embark on a complex
+        and morally ambiguous mission. The narrative becomes a tense and
+        thought-provoking exploration of the consequences of government actions,
+        the impact of trauma on individuals, and the blurred lines between
+        terrorism and rebellion. "Terror in Resonance" is celebrated for its
+        atmospheric storytelling, intricate character development, and a
+        haunting musical score. It navigates themes of alienation, identity, and
+        the pursuit of justice in a society marked by secrecy and manipulation.
+        The series captivates viewers with its psychological depth and moral
+        complexity, offering a compelling and suspenseful viewing experience.
+      </h3>
+
+      <h3><li class="listDetectiveConan">Detective Conan</li></h3>
+      <img
+        class="DetectiveConanImg"
+        src="detectiveConan.jpg"
+        alt="Jujutsukaisen"
+      />
+      <h3 id="aboutDetectiveConan">
+        "Detective Conan," also known as "Case Closed," is a Japanese manga and
+        anime series created by Gosho Aoyama. The story follows Shinichi Kudo, a
+        brilliant high school detective, who, after witnessing a crime, is
+        forcibly poisoned by a mysterious criminal organization. Instead of
+        killing him, the poison transforms Shinichi into a child, and he adopts
+        the alias Conan Edogawa. Now a child in appearance but with the mind of
+        a seasoned detective, Conan continues to solve crimes undercover while
+        searching for a cure to restore his original body. He befriends the
+        eccentric Professor Agasa and forms a close bond with Ran Mori, his
+        childhood friend, who remains unaware of his true identity. "Detective
+        Conan" is celebrated for its intricate murder mysteries, clever
+        deductions, and the overarching narrative of Conan's quest to uncover
+        the motives behind the organization that targeted him. The series
+        combines elements of crime-solving, humor, and character development,
+        making it one of the longest-running and beloved detective anime and
+        manga franchises. Through its engaging cases and overarching storyline,
+        "Detective Conan" captivates audiences with its clever storytelling and
+        memorable characters.
+      </h3>
+
+      <h3><li class="listMoriartyThePatriot">Higurashi When They Cry</li></h3>
+      <img
+        class="MoriartyThePatriotImg"
+        src="cry.jpg"
+        alt="moritarythepatriotic"
+      />
+      <h3 id="aboutMoriartyThePatriot">
+        "Higurashi When They Cry" ("Higurashi no Naku Koro ni") is a Japanese
+        visual novel, anime, and manga series known for its psychological horror
+        and mystery elements. The story is set in the rural village of
+        Hinamizawa, and it unfolds in multiple arcs, each presenting a different
+        perspective on the events. The narrative centers around a group of
+        friends and the mysterious and violent events that occur in the village
+        every year during the Watanagashi Festival. As the story progresses,
+        characters experience time loops and alternate realities, leading to a
+        complex and interwoven mystery involving supernatural elements, curses,
+        and the darker sides of human nature. "Higurashi When They Cry" is
+        celebrated for its atmospheric tension, psychological horror, and the
+        way it plays with the expectations of the audience. The series combines
+        suspenseful storytelling with moments of intense violence, creating a
+        chilling and memorable experience for those who enjoy psychological
+        mysteries with a touch of horror.
+      </h3>
+    </ol>
+  </body>
+</html>

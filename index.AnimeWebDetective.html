@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <title>Detective</title>
+    <style>
+      .body {
+        background-color: rgb(119, 60, 69);
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        background-color: rgb(15, 15, 14);
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+        overflow: hidden;
+      }
+      .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(35, 35, 35);
+      }
+      .navbar li {
+        float: left;
+      }
+      .logo {
+        position: absolute;
+        left: 1270px;
+        margin-top: 8px;
+        height: 50px;
+      }
+
+      .ListDeathNote {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .deathNoteImg {
+        margin-top: 50px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutDeathNote {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -450px;
+      }
+
+      .listMonster {
+        color: rgb(231, 229, 229);
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .MonsterImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutMonster {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -420px;
+      }
+
+      .listBungouStrayDogs {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .BungouStrayDogsImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutBungouStrayDogs {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -420px;
+      }
+
+      .listTheMillionaireDetectiveBalanceUnlimited {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .TheMillionaireDetectiveBalanceUnlimitedImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutTheMillionaireDetectiveBalanceUnlimited {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -420px;
+      }
+
+      .listParanoiaAgent {
+        margin-top: 200px;
+        margin-left: 55px;
+        color: rgb(231, 229, 229);
+      }
+
+      .ParanoiaAgentImg {
+        margin-top: 45px;
+        width: 300px;
+        float: left; /* Float the image to the left */
+        margin-left: 30px;
+      }
+
+      #aboutParanoiaAgent {
+        width: 600px;
+        margin-left: 430px;
+        margin-top: 80px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listGhostintheShell {
+        margin-top: 150px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .GhostintheShellImg {
+        margin-top: 45px;
+        width: 320px;
+        margin-left: 30px;
+      }
+
+      #aboutGhostintheShell {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -440px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listPsychoPass {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .PsychoPassImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutPsychoPass {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -470px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listTerrorInresonanse {
+        color: rgb(231, 229, 229);
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .TerrorInresonanseImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutTerrorInresonanse {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -440px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listDetectiveConan {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .DetectiveConanImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutDetectiveConan {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -440px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listMoriartyThePatriot {
+        margin-top: 100px;
+        margin-left: 60px;
+        color: rgb(231, 229, 229);
+      }
+
+      .MoriartyThePatriotImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutMoriartyThePatriot {
+        width: 500px;
+        margin-left: 400px;
+        margin-top: -440px;
+        margin-bottom: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      #aboutMoriartyThePatriot2 {
+        color: rgb(231, 229, 229);
+        margin-left: 40px;
+        width: 1000px;
+        margin-top: -53px;
+        margin-bottom: 50px;
+      }
+
+      .audio {
+        margin-left: 100px;
+        margin-top: 10px;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <nav class="navbar">
+      <h2>
+        <ul>
+          <li><a href="index.AnimeWebSite.html">Home</a></li>
+          <li><a href="index.AnimeWebHistory.html">History</a></li>
+          <li><a href="index.AnimeWebGanres.html" target="_self">Genres</a></li>
+          <li><a href="index.AnimeWebManga.html">Manga</a></li>
+          <li><a href="index.AnimeWebGames.html">Games</a></li>
+          <li>
+            <a href="index.AnimeWebAboutUs.html" target="_self">About Us</a>
+          </li>
+          <img class="logo" src="logo.png" alt="logo" />
+          <div class="audio-player">
+            <audio class="audio" controls autoplay loop>
+              <source
+                src="Near's Theme (A) - Death Note.mp3"
+                type="audio/mp3"
+                src="Near's Theme (A) - Death Note.wav"
+                type="audio/wav"
+              />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </ul>
+      </h2>
+    </nav>
+
+    <ol>
+      <h3>
+        <li class="ListDeathNote">Death Note</li>
+        <img class="deathNoteImg" src="deathNote.jpg" alt="deathNote" />
+      </h3>
+      <h3 id="aboutDeathNote">
+        "Death Note" is a Japanese manga and anime series written by Tsugumi
+        Ohba and illustrated by Takeshi Obata. The story revolves around Light
+        Yagami, a highly intelligent high school student who discovers a
+        mysterious notebook called the Death Note. The Death Note has the power
+        to kill anyone whose name is written in it, as long as the writer has
+        the person's face in their mind. Motivated by a desire to eliminate
+        criminals and create a utopia free of wrongdoing, Light begins using the
+        Death Note to carry out vigilante justice. However, his actions attract
+        the attention of law enforcement and the enigmatic detective known only
+        as "L." This sets off a high-stakes cat-and-mouse game between Light and
+        L, as they engage in a battle of wits to outsmart each other. The series
+        explores complex moral and ethical questions as Light grapples with the
+        consequences of playing god and the impact of his actions on society.
+        Themes of power, justice, and the fine line between good and evil are
+        central to the narrative. "Death Note" is celebrated for its
+        psychological depth, suspenseful plot twists, and the intellectual duel
+        between its two brilliant protagonists, making it a standout work in the
+        psychological thriller genre.
+      </h3>
+
+      <h3><li class="listMonster">Monster</li></h3>
+      <img class="MonsterImg" src="Monster.jpg" alt="monster" />
+      <h3 id="aboutMonster">
+        "Monster" is a psychological thriller anime based on the manga by Naoki
+        Urasawa. The story follows Dr. Kenzo Tenma, a highly skilled and
+        compassionate neurosurgeon in Germany. When faced with a moral dilemma,
+        Tenma chooses to save the life of a young boy named Johan Liebert
+        instead of the mayor, a decision that alters the course of his life. As
+        Tenma rises through the medical ranks, a series of mysterious and
+        gruesome murders unfold, and he discovers that Johan, the boy he saved,
+        is connected to these heinous crimes. Realizing the consequences of his
+        choice, Tenma sets out on a quest to stop Johan and unravel the dark
+        conspiracy surrounding the boy's past. "Monster" explores themes of
+        morality, guilt, and the consequences of choices. It delves into the
+        psychological depths of its characters, particularly the enigmatic
+        Johan, as Tenma tries to understand the nature of evil and redemption.
+        The series is celebrated for its intricate plot, complex characters, and
+        thought-provoking narrative, creating a suspenseful and intellectually
+        engaging experience for viewers.
+      </h3>
+
+      <h3><li class="listBungouStrayDogs">Bungou Stray Dogs</li></h3>
+      <img
+        class="BungouStrayDogsImg"
+        src="bungostraydogs.png"
+        alt="BungouStrayDogs"
+      />
+      <h3 id="aboutBungouStrayDogs">
+        "Bungo Stray Dogs" is a Japanese anime and manga series created by Kafka
+        Asagiri and Sango Harukawa. The story is set in Yokohama and revolves
+        around individuals with supernatural abilities, known as "Gifted." Many
+        of these Gifted individuals are named after famous literary figures. The
+        main character, Atsushi Nakajima, is an orphan who discovers that he has
+        the ability to transform into a powerful white tiger. After a series of
+        events, Atsushi joins the Armed Detective Agency, an organization
+        composed of Gifted individuals with unique abilities who solve various
+        cases and deal with supernatural threats. The agency often crosses paths
+        with the Port Mafia, a criminal organization with its own set of Gifted
+        members. "Bungo Stray Dogs" combines elements of mystery, action, and
+        the supernatural. The series explores the backstories and abilities of
+        its characters, drawing inspiration from classic literature and weaving
+        intricate narratives. As the characters confront their pasts and face
+        various challenges, the story unfolds with a mix of humor, drama, and
+        intense battles, making it a compelling and diverse anime experience.
+      </h3>
+
+      <h3>
+        <li class="listTheMillionaireDetectiveBalanceUnlimited">
+          The Millionaire Detective Balance: Unlimited
+        </li>
+      </h3>
+      <img
+        class="TheMillionaireDetectiveBalanceUnlimitedImg"
+        src="themillionerdetective.png"
+        alt="Tokyo Revengers"
+      />
+      <h3 id="aboutTheMillionaireDetectiveBalanceUnlimited">
+        "The Millionaire Detective Balance: Unlimited" is a Japanese anime
+        series that follows the wealthy and eccentric detective Haruka Nanase,
+        who joins the Metropolitan Police Department. Partnered with the more
+        traditional and by-the-book detective, Daisuke Kambe, they investigate
+        high-profile cases involving financial crimes, corruption, and the
+        mysterious figure known as "K." The series explores themes of justice,
+        privilege, and the clash of personalities as the two detectives work
+        together to solve complex cases. With a mix of action, humor, and social
+        commentary, "The Millionaire Detective" offers a unique take on the
+        detective genre, blending financial intrigue with crime-solving and
+        character dynamics.
+      </h3>
+
+      <h3><li class="listParanoiaAgent">Paranoia Agent</li></h3>
+      <img
+        class="ParanoiaAgentImg"
+        src="paranoia agent.png"
+        alt="Paranoia Agent"
+      />
+      <h3 id="aboutParanoiaAgent">
+        "Paranoia Agent," a Japanese anime series directed by Satoshi Kon, is a
+        psychological thriller that delves into the collective psyche of
+        society. The narrative begins with the sudden emergence of a mysterious
+        assailant known as Shonen Bat (Lil' Slugger), who attacks people with a
+        golden baseball bat. As the story unfolds, it becomes apparent that
+        Shonen Bat's existence is more complex than a mere criminal, leading to
+        a series of interconnected and surreal events. The anime explores themes
+        of societal pressure, media influence, and the blurred line between
+        reality and fantasy. It intertwines the lives of various characters,
+        including detectives investigating the case, victims, and witnesses,
+        creating a multi-layered narrative that challenges the viewer's
+        perceptions. "Paranoia Agent" weaves a captivating and thought-provoking
+        tale that questions the nature of reality, the impact of mass hysteria,
+        and the psychological toll of modern urban life. Through its unique
+        storytelling and Satoshi Kon's signature visual style, the series offers
+        a profound and unsettling exploration of the human psyche, making it a
+        standout work in the psychological thriller genre.
+      </h3>
+      <h3><li class="listGhostintheShell">Ghostin The Shell</li></h3>
+      <img
+        class="GhostintheShellImg"
+        src="Ghost In The Shell.png"
+        alt="GhostintheShell"
+      />
+      <h3 id="aboutGhostintheShell">
+        "Ghost in the Shell" is a Japanese cyberpunk manga series written and
+        illustrated by Masamune Shirow, and it has been adapted into various
+        anime films and series. The story is set in a futuristic world where
+        humans can augment their bodies with cybernetic enhancements, and
+        artificial intelligence has reached a level where it challenges the
+        definition of consciousness. The narrative centers around Major Motoko
+        Kusanagi, a cyborg policewoman, and her team in Section 9, an elite
+        anti-cyberterrorism unit. They investigate complex cases involving
+        cybercrime, hacking, and the blurred boundaries between humanity and
+        artificial intelligence. One overarching theme is the exploration of
+        what it means to be human in a society where the line between man and
+        machine is increasingly indistinct. "Ghost in the Shell" raises
+        philosophical questions about the nature of identity, consciousness, and
+        the ethical implications of advanced technology. It combines action,
+        intrigue, and philosophical depth, making it a seminal work in the
+        cyberpunk genre. The series has significantly influenced discussions
+        about the intersection of technology and humanity in both science
+        fiction and real-world debates.
+      </h3>
+
+      <h3><li class="listPsychoPass">Psycho-Pass</li></h3>
+      <img class="PsychoPassImg" src="psychopass.png" alt="HxH" />
+      <h3 id="aboutPsychoPass">
+        "Psycho-Pass" is a Japanese anime series set in a dystopian future where
+        society is governed by the Sibyl System, an advanced artificial
+        intelligence that assesses individuals' mental states to maintain social
+        order. The story follows Akane Tsunemori, a new recruit in the Public
+        Safety Bureau, as she and her colleagues, known as Enforcers,
+        investigate and apprehend potential criminals identified by their
+        Psycho-Pass, a numerical representation of mental health. As the
+        narrative unfolds, the series explores themes of free will, justice, and
+        the consequences of relying on technology to maintain societal harmony.
+        The Enforcers, often individuals with high crime coefficients, are
+        utilized to apprehend those deemed threats to society, blurring the
+        lines between law enforcement and those they pursue. "Psycho-Pass" is
+        known for its psychological depth, intense action, and dystopian
+        world-building. It challenges viewers to contemplate the ethical
+        implications of a society where one's mental state determines their fate
+        and raises questions about the balance between security and individual
+        freedom. The series offers a gripping exploration of the human psyche in
+        a futuristic setting, making it a compelling entry in the cyberpunk and
+        psychological thriller genres.
+      </h3>
+      <h3><li class="listTerrorInresonanse">Terror In Resonanse</li></h3>
+      <img
+        class="TerrorInresonanseImg"
+        src="Terror in resonanse.jpg"
+        alt="Mob Psycho 100"
+      />
+      <h3 id="aboutTerrorInresonanse">
+        "Terror in Resonance" is a Japanese anime series directed by Shinichirō
+        Watanabe and written by Yoko Kanno. The narrative unfolds in
+        contemporary Tokyo, where two mysterious teenagers, Nine and Twelve,
+        launch a series of terrorist attacks that puzzle the authorities and
+        capture the attention of the public. The duo leaves behind cryptic clues
+        and challenges for the police to solve. As the story progresses, it is
+        revealed that Nine and Twelve are former subjects of a secret experiment
+        conducted by a government institution. Driven by their desire to expose
+        the truth and confront their troubled past, the two embark on a complex
+        and morally ambiguous mission. The narrative becomes a tense and
+        thought-provoking exploration of the consequences of government actions,
+        the impact of trauma on individuals, and the blurred lines between
+        terrorism and rebellion. "Terror in Resonance" is celebrated for its
+        atmospheric storytelling, intricate character development, and a
+        haunting musical score. It navigates themes of alienation, identity, and
+        the pursuit of justice in a society marked by secrecy and manipulation.
+        The series captivates viewers with its psychological depth and moral
+        complexity, offering a compelling and suspenseful viewing experience.
+      </h3>
+
+      <h3><li class="listDetectiveConan">Detective Conan</li></h3>
+      <img
+        class="DetectiveConanImg"
+        src="detectiveConan.jpg"
+        alt="Jujutsukaisen"
+      />
+      <h3 id="aboutDetectiveConan">
+        "Detective Conan," also known as "Case Closed," is a Japanese manga and
+        anime series created by Gosho Aoyama. The story follows Shinichi Kudo, a
+        brilliant high school detective, who, after witnessing a crime, is
+        forcibly poisoned by a mysterious criminal organization. Instead of
+        killing him, the poison transforms Shinichi into a child, and he adopts
+        the alias Conan Edogawa. Now a child in appearance but with the mind of
+        a seasoned detective, Conan continues to solve crimes undercover while
+        searching for a cure to restore his original body. He befriends the
+        eccentric Professor Agasa and forms a close bond with Ran Mori, his
+        childhood friend, who remains unaware of his true identity. "Detective
+        Conan" is celebrated for its intricate murder mysteries, clever
+        deductions, and the overarching narrative of Conan's quest to uncover
+        the motives behind the organization that targeted him. The series
+        combines elements of crime-solving, humor, and character development,
+        making it one of the longest-running and beloved detective anime and
+        manga franchises. Through its engaging cases and overarching storyline,
+        "Detective Conan" captivates audiences with its clever storytelling and
+        memorable characters.
+      </h3>
+
+      <h3><li class="listMoriartyThePatriot">Moriarty The Patriot</li></h3>
+      <img
+        class="MoriartyThePatriotImg"
+        src="moritarythepatriotic.png"
+        alt="moritarythepatriotic"
+      />
+      <h3 id="aboutMoriartyThePatriot">
+        "Moriarty the Patriot" is a Japanese manga and anime series that serves
+        as a reimagining of the classic Sherlock Holmes stories by Sir Arthur
+        Conan Doyle. However, the narrative shifts its focus to Professor James
+        Moriarty, the infamous antagonist in the original tales, portraying him
+        in a different light. The series presents Moriarty as an antihero with a
+        goal to rid society of its deeply rooted injustices and class
+        disparities. Set in the late 19th century, the story follows William
+        James Moriarty, a brilliant mathematics professor, and his brothers.
+        Together, they orchestrate elaborate schemes to expose and eliminate
+        corrupt individuals in high society, challenging the systemic issues
+        that perpetuate inequality. As Moriarty's plans unfold, he catches the
+        attention of Sherlock Holmes, leading to a compelling intellectual
+        rivalry between the two. "Moriarty the Patriot" intricately weaves
+        together crime, mystery, and social commentary. It delves into themes of
+        justice, morality, and the consequences of societal structures. Through
+        its unique perspective on the Holmesian universe, the series offers a
+        thought-provoking exploration of class struggles and the motivations
+        that drive a character traditionally seen as a villain. The narrative
+        invites viewers to
+      </h3>
+      <h3 id="aboutMoriartyThePatriot2">
+        question the notions of good and evil, presenting Moriarty as a complex
+        figure navigating a world of moral ambiguity.
+      </h3>
+    </ol>
+  </body>
+</html>

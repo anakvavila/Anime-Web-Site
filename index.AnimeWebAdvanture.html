@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <title>Adventure</title>
+    <style>
+      .body {
+        background-color: rgb(252, 206, 255);
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        background-color: rgb(15, 15, 14);
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+        overflow: hidden;
+      }
+      .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(35, 35, 35);
+      }
+      .navbar li {
+        float: left;
+      }
+      .logo {
+        position: absolute;
+        left: 1270px;
+        margin-top: 8px;
+        height: 50px;
+      }
+
+      .ListNaruto {
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .NarutoImg {
+        margin-top: 50px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutNaruto {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -450px;
+      }
+
+      .listOnePunchMan {
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .onepunchmanImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutOnepunchMan {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -420px;
+      }
+
+      .listDemonSlayer {
+        margin-top: 300px;
+        margin-left: 50px;
+      }
+
+      .DemonSlayerImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutDemonSlayer {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+      }
+
+      .listTR {
+        margin-top: 300px;
+        margin-left: 55px;
+      }
+
+      .TRImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutTR {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -420px;
+      }
+
+      .listAot {
+        margin-top: 300px;
+        margin-left: 50px;
+      }
+
+      .AotImg {
+        margin-top: 45px;
+        width: 300px;
+        float: left; /* Float the image to the left */
+        margin-left: 30px;
+      }
+
+      #aboutAOT {
+        width: 600px;
+        margin-left: 400px;
+        margin-top: 58px;
+      }
+
+      #aboutAOT2 {
+        width: 1000px;
+        margin-left: 35px;
+        margin-top: -15px;
+      }
+
+      .listChainsawman {
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .chainsawmanImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutChainsawman {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -300px;
+      }
+
+      .listHxh {
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .HXHImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutHxh {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -440px;
+      }
+
+      .listMobPsycho100 {
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .MobPsycho100Img {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutMobPsycho100 {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -300px;
+      }
+
+      .listjujutsukaisen {
+        margin-top: 200px;
+        margin-left: 50px;
+      }
+
+      .jujutsukaisenImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutJujutsukaisen {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+      }
+
+      .listBleach {
+        margin-top: 250px;
+        margin-left: 60px;
+      }
+
+      .BleachImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutBleach {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -370px;
+        margin-bottom: 150px;
+      }
+
+      .audio {
+        margin-left: 100px;
+        margin-top: 10px;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <nav class="navbar">
+      <h2>
+        <ul>
+          <li><a href="index.AnimeWebSite.html">Home</a></li>
+          <li><a href="index.AnimeWebHistory.html">History</a></li>
+          <li><a href="index.AnimeWebGanres.html" target="_self">Genres</a></li>
+          <li><a href="index.AnimeWebManga.html">Manga</a></li>
+          <li><a href="index.AnimeWebGames.html">Games</a></li>
+          <li>
+            <a href="index.AnimeWebAboutUs.html" target="_self">About Us</a>
+          </li>
+          <img class="logo" src="logo.png" alt="logo" />
+          <div class="audio-player">
+            <audio class="audio" controls autoplay loop>
+              <source
+                src="One Piece OST Overtaken.mp3"
+                type="audio/mp3"
+                src="One Piece OST Overtaken.wav"
+                type="audio/wav"
+              />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </ul>
+      </h2>
+    </nav>
+
+    <ol>
+      <h3>
+        <li class="ListNaruto">Naruto</li>
+        <img class="NarutoImg" src="Naruto2.jpg" alt="Naruto" />
+      </h3>
+      <h3 id="aboutNaruto">
+        "Naruto" is a Japanese manga and anime series created by Masashi
+        Kishimoto. The story follows Naruto Uzumaki, a young ninja with dreams
+        of becoming the strongest ninja and earning the title of Hokage, the
+        leader of his village, the Hidden Leaf Village (Konohagakure). The
+        series is set in a fictional world where ninja villages exist, and
+        individuals train in the art of ninjutsu and other techniques. Naruto is
+        an orphan who grew up facing prejudice and loneliness because he is the
+        host of the Nine-Tailed Fox, a powerful and malevolent creature that
+        attacked the village years before. Despite the challenges, Naruto is
+        determined to prove himself and gain the acceptance of his fellow
+        villagers. As the story progresses, Naruto goes through various
+        missions, battles, and challenges alongside his friends and fellow
+        ninjas, such as Sasuke Uchiha and Sakura Haruno. The series explores
+        themes of friendship, perseverance, and the pursuit of one's dreams.
+        Additionally, it delves into the complexities of ninja politics,
+        conflicts between villages, and the mysteries surrounding Naruto's own
+        origins. The sequel to "Naruto" is "Boruto: Naruto Next Generations,"
+        which follows Naruto's son, Boruto Uzumaki, and his adventures as a
+        ninja.
+      </h3>
+
+      <h3><li class="listOnePunchMan">One Piece</li></h3>
+      <img
+        class="onepunchmanImg"
+        src="One_Piece,_Volume_61_Cover_(Japanese).jpg"
+        alt="onepunchman"
+      />
+      <h3 id="aboutOnepunchMan">
+        "One Piece" is a Japanese manga and anime series created by Eiichiro
+        Oda. The story follows Monkey D. Luffy, a young pirate with the ability
+        to stretch his body like rubber after eating a Devil Fruit. Luffy sets
+        out on a grand adventure to find the legendary treasure known as One
+        Piece and become the Pirate King. Along the way, he gathers a diverse
+        crew of friends, the Straw Hat Pirates, and faces powerful enemies, all
+        while exploring a vast and mysterious world filled with islands, seas,
+        and unique characters. "One Piece" is renowned for its epic
+        storytelling, intricate world-building, and themes of friendship,
+        freedom, and the pursuit of dreams.
+      </h3>
+
+      <h3><li class="listDemonSlayer">Fullmetal Alchemist:Brotherhood</li></h3>
+      <img class="DemonSlayerImg" src="fullmetal.jpg" alt="demonslayer" />
+      <h3 id="aboutDemonSlayer">
+        "Fullmetal Alchemist" is a Japanese manga and anime series following two
+        brothers, Edward and Alphonse Elric. After a failed alchemical
+        experiment to bring their mother back to life, Edward loses his arm and
+        leg, while Alphonse loses his entire body. To regain their bodies, they
+        embark on a quest to find the Philosopher's Stone. The series explores
+        themes of sacrifice, morality, and the consequences of wielding
+        alchemical power in a richly detailed, steampunk-inspired world.
+      </h3>
+
+      <h3><li class="listTR">Log Horizon</li></h3>
+      <img class="TRImg" src="loghorizon.jpe" alt="Tokyo Revengers" />
+      <h3 id="aboutTR">
+        "Log Horizon" is a Japanese anime and light novel series that begins
+        with thousands of players finding themselves trapped in the popular
+        MMORPG (Massively Multiplayer Online Role-Playing Game) Elder Tale. The
+        story centers on Shiroe, a strategist, and his friends as they navigate
+        the game's world and attempt to understand the circumstances of their
+        predicament. Unlike other trapped-in-a-game scenarios, "Log Horizon"
+        focuses on the characters' adaptation to the virtual world, exploring
+        politics, economics, and social dynamics within the game. The series
+        combines elements of fantasy, adventure, and strategic thinking,
+        offering a unique take on the MMORPG genre.
+      </h3>
+
+      <h3><li class="listAot">Attack On Titan</li></h3>
+      <img class="AotImg" src="aot.webp" alt="AttackOnTitans" />
+      <h3 id="aboutAOT">
+        "Attack on Titan," penned by Hajime Isayama, stands as a monumental dark
+        fantasy manga and anime series that delves into a world gripped by
+        terror. In a realm where humanity is ensconced within colossal walls to
+        shield itself from relentless Titans—gigantic humanoid creatures—Isayama
+        unfolds a narrative marked by despair, resilience, and an unyielding
+        pursuit of truth. The tale's linchpin is Eren Yeager, alongside his
+        adoptive sister Mikasa Ackerman and friend Armin Arlert, as they grapple
+        with the traumatic aftermath of their hometown's devastation by the
+        enigmatic Colossal Titan. Swearing to eliminate the Titan scourge and
+        unearth the mysteries shrouding their existence, the trio enlists in the
+        Survey Corps—a faction tasked with confronting Titans beyond the walls.
+        Central to the narrative are the Titans themselves, ranging from
+        grotesque abominations to towering behemoths capable of shattering human
+        defenses. The three concentric walls—Maria, Rose, and Sina—provide both
+        a sanctuary and a chilling backdrop, with the story unraveling the
+        secrets behind their creation. As "Attack on Titan" progresses, it
+        unfurls a complex tapestry of intrigue, political machinations, and
+        ethical quandaries. The series thrusts its characters into a maelstrom
+        of moral dilemmas, pitting their survival instincts against the thirst
+        for truth and the consequences of seeking it. The characters within
+        "Attack on Titan"
+      </h3>
+
+      <h3 id="aboutAOT2">
+        are not mere conduits for the plot; rather, they undergo profound
+        development, grappling with their fears, forging alliances, and
+        confronting the darker aspects of human nature. The narrative, propelled
+        by a relentless pursuit of the unknown, is a crucible for the
+        characters' evolution. Thematically, the series explores survival,
+        freedom, and the cyclical nature of hatred. It delves into the intricate
+        dynamics of a society under perpetual Titan threat, scrutinizing the
+        impact of war on individuals and collective consciousness. "Attack on
+        Titan" captivates audiences with its gripping action sequences,
+        intricate storytelling, and audacious narrative choices. Isayama's
+        creation, spanning 34 manga volumes, culminates in a poignant and
+        impactful conclusion. The anime adaptation faithfully covers the
+        multifaceted layers of the story, solidifying "Attack on Titan" as a
+        quintessential work in the realm of manga and anime.
+      </h3>
+      <h3>
+        <li class="listChainsawman">Magi: The Labyrinth of Magic</li>
+      </h3>
+      <img class="chainsawmanImg" src="labirinth.jpg" alt="chainsawman" />
+      <h3 id="aboutChainsawman">
+        "Magi: The Labyrinth of Magic" is a Japanese anime and manga series that
+        reimagines characters and settings from Arabian Nights. The story
+        follows Aladdin, Alibaba Saluja, and Morgiana as they embark on
+        adventures in a world filled with magical dungeons, powerful djinn, and
+        political intrigue. The trio explores dungeons to conquer powerful
+        entities known as djinn and uncover the secrets of their world. Along
+        the way, they encounter various allies and adversaries, challenging the
+        balance of power in the realm. "Magi" combines elements of fantasy,
+        action, and political drama, exploring themes of friendship, destiny,
+        and the consequences of wielding magical powers.
+      </h3>
+
+      <h3><li class="listHxh">Hunter X Hunter</li></h3>
+      <img class="HXHImg" src="HxH.jpg" alt="HxH" />
+      <h3 id="aboutHxh">
+        "Hunter x Hunter" (often abbreviated as HxH) is a Japanese manga series
+        written and illustrated by Yoshihiro Togashi. The story follows the
+        adventures of Gon Freecss, a young boy who aspires to become a Hunter
+        and find his missing father, Ging Freecss, who is a legendary Hunter.
+        The term "Hunter" in the series refers to individuals with special
+        skills and a license to pursue dangerous creatures, explore uncharted
+        territories, and undertake various tasks like hunting criminals or
+        searching for valuable items. The narrative begins with Gon taking the
+        Hunter Examination, a rigorous test that challenges applicants
+        physically and mentally. During the exam, he befriends other aspiring
+        Hunters, including Killua Zoldyck, Leorio Paradinight, and Kurapika.
+        Each character has their own motivations and goals for becoming a
+        Hunter. As the story progresses, Gon and his friends embark on different
+        adventures, facing challenges, encountering powerful foes, and delving
+        into the complex world of Hunters, Nen (a form of energy manipulation),
+        and various unique and dangerous creatures. The series is known for its
+        intricate world-building, well-developed characters, and strategic
+        battles.
+      </h3>
+      <h3><li class="listMobPsycho100">Akame ga Kill</li></h3>
+      <img class="MobPsycho100Img" src="akame.jpg" alt="Mob Psycho 100" />
+      <h3 id="aboutMobPsycho100">
+        "Akame ga Kill" is a Japanese anime and manga series that follows
+        Tatsumi, a young warrior who joins an assassin group called Night Raid
+        to overthrow a corrupt empire. Set in a dark fantasy world, the series
+        explores themes of morality, rebellion, and the consequences of wielding
+        power. As Night Raid members confront powerful adversaries, they
+        navigate a complex plot with twists and turns, leading to intense and
+        often tragic confrontations. The series is known for its action, moral
+        ambiguity, and impactful character arcs.
+      </h3>
+
+      <h3><li class="listjujutsukaisen">The Rising of the Shield Hero</li></h3>
+      <img class="jujutsukaisenImg" src="shield.jpg" alt="Jujutsukaisen" />
+      <h3 id="aboutJujutsukaisen">
+        "The Rising of the Shield Hero" is a Japanese light novel, manga, and
+        anime series that begins with Naofumi Iwatani, one of four young men
+        summoned to a parallel world as the Shield Hero. Despite his initial
+        lack of combat abilities and a difficult start, Naofumi evolves into a
+        formidable hero. However, he faces betrayal and adversity, leading him
+        to become a more cautious and pragmatic protagonist. The series explores
+        themes of betrayal, redemption, and the resilience of the human spirit
+        within a fantasy setting filled with monsters, magic, and political
+        intrigue.
+      </h3>
+
+      <h3><li class="listBleach">Made in Abyss</li></h3>
+      <img class="BleachImg" src="madeinabyss.jpg" alt="Bleach" />
+      <h3 id="aboutBleach">
+        "Made in Abyss" is a Japanese anime and manga series set in a mysterious
+        world centered around a massive, enigmatic chasm known as the Abyss. The
+        story follows a young orphan named Riko who, along with her robot friend
+        Reg, descends into the Abyss in search of her missing mother. As they
+        navigate through different layers of the Abyss, each filled with unique
+        challenges and wonders, they uncover the mysteries and dangers lurking
+        within. The series combines elements of fantasy, adventure, and dark
+        fantasy, and it is celebrated for its rich world-building, emotional
+        depth, and exploration of the consequences of delving into the unknown.
+      </h3>
+    </ol>
+  </body>
+</html>

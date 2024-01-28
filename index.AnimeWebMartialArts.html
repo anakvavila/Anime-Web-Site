@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <title>Martial Arts</title>
+    <style>
+      .body {
+        background-color: rgb(55, 44, 114);
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        background-color: rgb(15, 15, 14);
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+        overflow: hidden;
+      }
+      .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(35, 35, 35);
+      }
+      .navbar li {
+        float: left;
+      }
+      .logo {
+        position: absolute;
+        left: 1270px;
+        margin-top: 8px;
+        height: 50px;
+      }
+
+      .ListDeathNote {
+        margin-top: 100px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .deathNoteImg {
+        margin-top: 50px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutDeathNote {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -450px;
+      }
+
+      .listMonster {
+        color: rgb(231, 229, 229);
+        margin-top: 200px;
+        margin-left: 50px;
+      }
+
+      .MonsterImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutMonster {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -350px;
+      }
+
+      .listBungouStrayDogs {
+        margin-top: 200px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .BungouStrayDogsImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutBungouStrayDogs {
+        color: rgb(231, 229, 229);
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+      }
+
+      .listTheMillionaireDetectiveBalanceUnlimited {
+        margin-top: 250px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .TheMillionaireDetectiveBalanceUnlimitedImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutTheMillionaireDetectiveBalanceUnlimited {
+        width: 500px;
+        color: rgb(231, 229, 229);
+        margin-left: 500px;
+        margin-top: -350px;
+      }
+
+      .listParanoiaAgent {
+        margin-top: 200px;
+        margin-left: 55px;
+        color: rgb(231, 229, 229);
+      }
+
+      .ParanoiaAgentImg {
+        margin-top: 45px;
+        width: 300px;
+        float: left; /* Float the image to the left */
+        margin-left: 30px;
+      }
+
+      #aboutParanoiaAgent {
+        width: 600px;
+        margin-left: 430px;
+        margin-top: 150px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listGhostintheShell {
+        margin-top: 150px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .GhostintheShellImg {
+        margin-top: 45px;
+        width: 320px;
+        margin-left: 30px;
+      }
+
+      #aboutGhostintheShell {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listPsychoPass {
+        margin-top: 200px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .PsychoPassImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutPsychoPass {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listTerrorInresonanse {
+        color: rgb(231, 229, 229);
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      .TerrorInresonanseImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutTerrorInresonanse {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listDetectiveConan {
+        margin-top: 200px;
+        margin-left: 50px;
+        color: rgb(231, 229, 229);
+      }
+
+      .DetectiveConanImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutDetectiveConan {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -400px;
+        color: rgb(231, 229, 229);
+      }
+
+      .listMoriartyThePatriot {
+        margin-top: 200px;
+        margin-left: 60px;
+        color: rgb(231, 229, 229);
+      }
+
+      .MoriartyThePatriotImg {
+        margin-top: 45px;
+        width: 300px;
+        margin-left: 30px;
+      }
+
+      #aboutMoriartyThePatriot {
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -380px;
+        margin-bottom: 150px;
+        color: rgb(231, 229, 229);
+      }
+
+      .audio {
+        margin-left: 100px;
+        margin-top: 10px;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <nav class="navbar">
+      <h2>
+        <ul>
+          <li><a href="index.AnimeWebSite.html">Home</a></li>
+          <li><a href="index.AnimeWebHistory.html">History</a></li>
+          <li><a href="index.AnimeWebGanres.html" target="_self">Genres</a></li>
+          <li><a href="index.AnimeWebManga.html">Manga</a></li>
+          <li><a href="index.AnimeWebGames.html">Games</a></li>
+          <li>
+            <a href="index.AnimeWebAboutUs.html" target="_self">About Us</a>
+          </li>
+          <img class="logo" src="logo.png" alt="logo" />
+          <div class="audio-player">
+            <audio class="audio" controls autoplay loop>
+              <source
+                src="Baki OST - Confrontation (10 minute extended HQ).mp3"
+                type="audio/mp3"
+                src="Baki OST - Confrontation (10 minute extended HQ).wav"
+                type="audio/wav"
+              />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </ul>
+      </h2>
+    </nav>
+
+    <ol>
+      <h3>
+        <li class="ListDeathNote">Dragon Ball Z</li>
+        <img class="deathNoteImg" src="Dragon Ball Z.jpe" alt="deathNote" />
+      </h3>
+      <h3 id="aboutDeathNote">
+        "Dragon Ball Z," a seminal Japanese anime, continues the legendary saga
+        of Goku and his allies defending Earth. In the Saiyan Saga, Goku's
+        long-lost brother Raditz emerges, setting the stage for intense battles
+        and Goku's sacrificial moment. The Frieza Saga intensifies as Goku
+        confronts the tyrant Frieza on Planet Namek, climaxing in Goku's iconic
+        transformation into the Super Saiyan. Transitioning to the Cell Saga,
+        the narrative focuses on androids and the bio-engineered perfect being,
+        Cell, with Gohan's ascension to Super Saiyan 2 as a standout moment. The
+        Majin Buu Saga introduces the chaotic Majin Buu, leading to monumental
+        battles and the fusion of Goku and Vegeta into Vegito. "Dragon Ball Z"
+        is lauded for its impactful storytelling, iconic transformations, and
+        enduring characters, leaving an indelible mark on the anime genre
+        globally.
+      </h3>
+
+      <h3><li class="listMonster">Naruto</li></h3>
+      <img class="MonsterImg" src="narutoShippuden.jpg" alt="monster" />
+      <h3 id="aboutMonster">
+        "Naruto" is a Japanese anime and manga series centered on Naruto
+        Uzumaki, a young ninja with dreams of becoming the strongest ninja and
+        leader of his village, known as Hokage. The series follows Naruto's
+        journey of growth, friendship, and self-discovery as he faces formidable
+        enemies, seeks recognition, and strives to protect his village. Filled
+        with ninja battles, complex characters, and themes of perseverance,
+        "Naruto" has become a cultural phenomenon, resonating with audiences
+        worldwide.
+      </h3>
+
+      <h3><li class="listBungouStrayDogs">Baki the Grappler</li></h3>
+      <img class="BungouStrayDogsImg" src="baki.jpg" alt="BungouStrayDogs" />
+      <h3 id="aboutBungouStrayDogs">
+        "Baki the Grappler" is a Japanese anime and manga series following Baki
+        Hanma, a young martial artist seeking to hone his skills and surpass his
+        legendary father, Yujiro Hanma, known as the strongest creature on
+        Earth. The narrative unfolds through intense martial arts tournaments,
+        showcasing Baki's encounters with powerful opponents and his relentless
+        pursuit of strength. The series explores themes of martial arts
+        philosophy, rivalry, and the pursuit of excellence in combat, delivering
+        action-packed sequences and character-driven storytelling.
+      </h3>
+
+      <h3>
+        <li class="listTheMillionaireDetectiveBalanceUnlimited">
+          Kenichi: The Mightiest Disciple
+        </li>
+      </h3>
+      <img
+        class="TheMillionaireDetectiveBalanceUnlimitedImg"
+        src="kenichi.jpg"
+        alt="Tokyo Revengers"
+      />
+      <h3 id="aboutTheMillionaireDetectiveBalanceUnlimited">
+        "Kenichi: The Mightiest Disciple" is a Japanese anime and manga series
+        that revolves around Kenichi Shirahama, a high school student who, tired
+        of being bullied, decides to learn martial arts. He stumbles upon a dojo
+        and begins training under various masters in different martial arts
+        disciplines. The series follows Kenichi's journey as he faces
+        challenges, confronts powerful opponents, and strives to become the
+        mightiest disciple. It combines elements of action, comedy, and
+        coming-of-age themes, showcasing Kenichi's growth as a martial artist
+        and his interactions with a diverse cast of characters.
+      </h3>
+
+      <h3><li class="listParanoiaAgent">Hajime no Ippo</li></h3>
+      <img
+        class="ParanoiaAgentImg"
+        src="Hajime_no_Ippo_1.png"
+        alt="Paranoia Agent"
+      />
+      <h3 id="aboutParanoiaAgent">
+        "Hajime no Ippo" is a Japanese anime and manga series written and
+        illustrated by George Morikawa. The story revolves around Ippo
+        Makunouchi, a timid and bullied high school student who discovers the
+        sport of boxing after being saved from a group of bullies by a
+        professional boxer. Inspired by his newfound interest in boxing, Ippo
+        decides to pursue the sport. Under the guidance of his coach, Genji
+        Kamogawa, and with the support of his friends and fellow boxers, Ippo
+        begins his journey to become a professional boxer. The series explores
+        Ippo's growth as a fighter, his relationships with other boxers, and the
+        challenges he faces in the competitive world of boxing. "Hajime no Ippo"
+        is celebrated for its intense and realistic portrayal of boxing,
+        character development, and the camaraderie among boxers. The series
+        combines sports action with elements of drama, humor, and personal
+        growth, creating a compelling narrative that has garnered a dedicated
+        fanbase over the years.
+      </h3>
+      <h3><li class="listGhostintheShell">Kengan Ashura</li></h3>
+      <img class="GhostintheShellImg" src="ashura.jpg" alt="GhostintheShell" />
+      <h3 id="aboutGhostintheShell">
+        "Kengan Ashura" is a Japanese manga and anime series that delves into
+        the intense world of underground gladiator-style martial arts
+        tournaments. The story revolves around Tokita Ohma, a skilled martial
+        artist representing a powerful business conglomerate. The series
+        explores various fighting styles, strategies, and the intricate
+        connections between powerful corporations and their champions. As Ohma
+        competes in the Kengan Annihilation Tournament, he faces formidable
+        opponents, each with their unique martial arts skills. "Kengan Ashura"
+        combines intense martial arts action with elements of corporate
+        intrigue, creating a compelling and adrenaline-pumping narrative.
+      </h3>
+
+      <h3><li class="listPsychoPass">Samurai Champloo</li></h3>
+      <img class="PsychoPassImg" src="Samurai_Champloo_key_art.jpg" alt="HxH" />
+      <h3 id="aboutPsychoPass">
+        "Samurai Champloo" is a Japanese anime series that seamlessly blends
+        samurai action, hip-hop culture, and anachronistic elements. The story
+        follows three unlikely companions: Mugen, a brash vagabond with a unique
+        fighting style; Jin, a calm and skilled ronin with a traditional
+        approach; and Fuu, a spirited young woman on a quest to find the
+        "samurai who smells of sunflowers." The trio embarks on a journey
+        through an anachronistic Edo-era Japan, encountering various challenges,
+        sword fights, and engaging in an eclectic mix of adventures. The series
+        is known for its dynamic animation, stylish soundtrack featuring hip-hop
+        beats, and its unconventional approach to historical settings. "Samurai
+        Champloo" is celebrated for its unique fusion of genres, memorable
+        characters, and the exploration of friendship and destiny against the
+        backdrop of a vibrant and anachronistic world.
+      </h3>
+      <h3><li class="listTerrorInresonanse">Afro Samurai</li></h3>
+      <img
+        class="TerrorInresonanseImg"
+        src="afroSamurai.jpe"
+        alt="Mob Psycho 100"
+      />
+      <h3 id="aboutTerrorInresonanse">
+        "Afro Samurai" is a Japanese anime and manga series that follows the
+        journey of Afro, a skilled and stoic swordsman, as he seeks vengeance
+        against Justice, the man who killed Afro's father. The series unfolds in
+        a futuristic, yet feudal, Japan and combines intense sword fights, a
+        hip-hop-inspired soundtrack, and a revenge-driven narrative. Afro's
+        quest for justice is marked by blood-soaked battles, challenging
+        adversaries, and a personal journey to reclaim the No. 1 headband,
+        symbolizing the most formidable warrior. "Afro Samurai" is praised for
+        its stylish animation, action sequences, and the fusion of traditional
+        samurai themes with modern influences.
+      </h3>
+
+      <h3><li class="listDetectiveConan">Rurouni Kenshin</li></h3>
+      <img class="DetectiveConanImg" src="kenshin.jpg" alt="Jujutsukaisen" />
+      <h3 id="aboutDetectiveConan">
+        "Rurouni Kenshin" is a Japanese anime and manga series set in the Meiji
+        era. The story revolves around Himura Kenshin, a wandering swordsman
+        with a dark past as an assassin during the Bakumatsu war. Vowing never
+        to kill again, Kenshin carries a reverse-edged sword and seeks
+        redemption by protecting the innocent. As Kenshin settles in Tokyo, he
+        encounters friends, allies, and adversaries from his past. The series
+        explores themes of atonement, pacifism, and the impact of one's actions
+        on the path to redemption. Kenshin's journey is marked by intense sword
+        fights, moral dilemmas, and the enduring pursuit of a peaceful
+        existence. Renowned for its captivating storytelling, well-developed
+        characters, and historical setting, "Rurouni Kenshin" remains a classic
+        in the anime and manga landscape.
+      </h3>
+
+      <h3>
+        <li class="listMoriartyThePatriot">
+          Karate Shoukoushi Kohinata Minoru
+        </li>
+      </h3>
+      <img
+        class="MoriartyThePatriotImg"
+        src="karateGirl.jpg"
+        alt="moritarythepatriotic"
+      />
+      <h3 id="aboutMoriartyThePatriot">
+        "Karate Shoukoushi Kohinata Minoru" (Kohinata Minoru the Karate Girl) is
+        a Japanese manga series that has been adapted into anime. The story
+        centers around Minoru Kohinata, a college student with no particular
+        goals in life. However, his life takes a turn when he encounters a
+        karate club and becomes enamored with the martial art. Driven by
+        newfound passion, Minoru joins the karate club, and the series follows
+        his journey as he learns and trains in karate. Along the way, Minoru
+        faces challenges, forms friendships, and experiences personal growth.
+        The narrative combines elements of sports, martial arts, and
+        coming-of-age themes, showcasing the protagonist's dedication to
+        mastering karate and finding purpose in his college years. "Karate
+        Shoukoushi Kohinata Minoru" explores the discipline, perseverance, and
+        camaraderie inherent in martial arts, using karate as a backdrop for the
+        protagonist's development.
+      </h3>
+    </ol>
+  </body>
+</html>
